@@ -20,6 +20,7 @@ import { ListComponent } from './components/list/list.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { CatalogComponent } from './components/catalog/catalog.component';
 import { CatalogItemComponent } from './components/catalog-item/catalog-item.component';
+import { MagesComponent } from './components/mages/mages.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CatalogItemComponent } from './components/catalog-item/catalog-item.com
     ListItemComponent,
     CatalogComponent,
     CatalogItemComponent,
+    MagesComponent,
   ],
   imports: [
     BrowserModule,

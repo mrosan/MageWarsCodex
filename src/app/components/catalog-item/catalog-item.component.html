@@ -1,10 +1,10 @@
-<div *ngIf="item.image" class="cat">
-  <img class="cat-img" src="{{ item.image }}" alt="Mage Wars card" />
+<div *ngIf="item?.image" class="cat">
+  <img class="cat-img" src="{{ item?.image }}" alt="Mage Wars card" />
 </div>
-<div *ngIf="!item.image" class="cat">
+<div *ngIf="!item?.image" class="cat">
   <mat-card class="blank-card">
-    <mat-card-title>{{ item.name }}</mat-card-title>
-    <mat-card-subtitle>{{ item.type }}</mat-card-subtitle>
+    <mat-card-title>{{ item?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ item?.type }}</mat-card-subtitle>
     <mat-card-content
       ><br />The missing illustration is coming soon!<br
     /></mat-card-content>

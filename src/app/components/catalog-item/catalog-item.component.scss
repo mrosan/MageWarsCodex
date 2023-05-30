@@ -5,6 +5,7 @@
 .cat-img {
 	max-height: 320px;
 	max-width: 320px;
+	filter: drop-shadow(0 0 0.25rem black);
 }
 
 .blank-card {
@@ -12,4 +13,5 @@
 	height: 320px;
 	width: 220px;
 	background-color: rgba(255, 193, 111, 0.863);
+	filter: drop-shadow(0 0 0.25rem black);
 }

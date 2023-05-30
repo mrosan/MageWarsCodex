@@ -11,7 +11,7 @@ import { EmitterService } from './services/emitter.service';
 })
 export class AppComponent implements OnInit, OnDestroy {
   public wideScreen: boolean = false;
-  public selectedTab: string = 'codex'; // TODO enum
+  public selectedTab: string | undefined; // TODO enum
 
   private wsSub: Subscription | undefined;
   private tabSub: Subscription | undefined;
@@ -31,16 +31,14 @@ export class AppComponent implements OnInit, OnDestroy {
     this.wsSub = this.emitter.onWideScreen.subscribe(
       (wide) => (this.wideScreen = wide)
     );
-    this.tabSub = this.emitter.onTabChange.subscribe(
-      (tab) => (this.selectedTab = tab)
-    );
+    this.tabSub = this.emitter.onTabChange.subscribe((tab) => {
+      this.selectedTab = tab;
+      this.cdr.detectChanges();
+    });
   }
 
   ngOnDestroy(): void {
     this.wsSub?.unsubscribe();
-  }
-
-  ngAfterViewInit(): void {
-    this.cdr.detectChanges();
+    this.tabSub?.unsubscribe();
   }
 }

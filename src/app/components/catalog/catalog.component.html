@@ -2,126 +2,138 @@
   <div>
     <mat-card class="inputs" *ngIf="filterView">
       <form class="selections" [formGroup]="filterGroup">
-        <mat-form-field class="input-small">
-          <mat-label>Spell types</mat-label>
-          <mat-select multiple color="accent" formControlName="types">
-            <mat-option *ngFor="let type of filterView.types" [value]="type">
-              {{ type }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field
-          class="input-small"
-          [ngClass]="{ strict: filterGroup.controls['strict'].value }"
-        >
-          <mat-label>Spell subtypes</mat-label>
-          <mat-select multiple formControlName="subTypes">
-            <input
-              class="embedded-input"
-              (keyup)="onSubtypeFilterChange($event)"
-              (keydown)="$event.stopPropagation()"
-            />
-            <mat-option *ngFor="let type of filterView.subTypes" [value]="type">
-              {{ type }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field
-          class="input-small"
-          [ngClass]="{ strict: filterGroup.controls['strict'].value }"
-        >
-          <mat-label>Spell schools</mat-label>
-          <mat-select multiple formControlName="schools">
-            <mat-option
-              *ngFor="let school of filterView.schools"
-              [value]="school"
-            >
-              {{ school }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field class="input-small">
-          <mat-label>Spell levels</mat-label>
-          <mat-select multiple formControlName="levels">
-            <mat-option *ngFor="let level of filterView.levels" [value]="level">
-              {{ "Level " + level }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field class="input-small">
-          <mat-label>Exclusive spells</mat-label>
-          <mat-select multiple formControlName="only">
-            <mat-option *ngFor="let only of filterView.onlies" [value]="only">
-              {{ only }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field class="input-small">
-          <mat-label>Equipment slots</mat-label>
-          <mat-select multiple formControlName="slots">
-            <mat-option *ngFor="let slot of filterView.slots" [value]="slot">
-              {{ slot }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field
-          class="src-input"
-          [ngClass]="{ 'input-small': innerWidth < 720 }"
-        >
-          <mat-label *ngIf="list$ | async as list">{{
-            "Search " +
-              (innerWidth < 720 ? "in " : "among ") +
-              list.length +
-              " spells"
-          }}</mat-label>
-          <input
-            matInput
-            class="search-input"
-            type="text"
-            formControlName="name"
-          />
-          <button
-            *ngIf="filterGroup.controls['name'].value"
-            class="clear-btn"
-            matSuffix
-            mat-icon-button
-            (click)="filterGroup.controls['name'].reset()"
+        <div class="selection-group">
+          <mat-form-field class="input-small">
+            <mat-label>Spell types</mat-label>
+            <mat-select multiple color="accent" formControlName="types">
+              <mat-option *ngFor="let type of filterView.types" [value]="type">
+                {{ type }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field
+            class="input-small"
+            [ngClass]="{ strict: filterGroup.controls['strict'].value }"
           >
-            <mat-icon>close</mat-icon>
-          </button>
-        </mat-form-field>
-        <mat-form-field
-          class="set-input"
-          [ngClass]="{ 'input-small': innerWidth < 720 }"
-        >
-          <mat-label>Spell sets</mat-label>
-          <mat-select multiple color="accent" formControlName="sets">
-            <mat-select-trigger>
-              {{ filterGroup.controls["sets"].value[0] || "" }}
-              <span
-                *ngIf="(filterGroup.controls['sets'].value.length || 0) > 1"
-                class="and-others"
+            <mat-label>Spell subtypes</mat-label>
+            <mat-select multiple formControlName="subTypes">
+              <input
+                class="embedded-input"
+                (keyup)="onSubtypeFilterChange($event)"
+                (keydown)="$event.stopPropagation()"
+              />
+              <mat-option
+                *ngFor="let type of filterView.subTypes"
+                [value]="type"
               >
-                (+{{ (filterGroup.controls["sets"].value.length || 0) - 1 }}
-                {{
-                  filterGroup.controls["sets"].value.length === 2
-                    ? "other"
-                    : "others"
-                }})
-              </span>
-            </mat-select-trigger>
-            <mat-option *ngFor="let set of filterView.sets" [value]="set">
-              {{ set }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <div class="input cb-input">
-          <mat-label>Apply strict filter</mat-label>
-          <mat-checkbox formControlName="strict"></mat-checkbox>
+                {{ type }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field
+            class="input-small"
+            [ngClass]="{ strict: filterGroup.controls['strict'].value }"
+          >
+            <mat-label>Spell schools</mat-label>
+            <mat-select multiple formControlName="schools">
+              <mat-option
+                *ngFor="let school of filterView.schools"
+                [value]="school"
+              >
+                {{ school }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-small">
+            <mat-label>Spell levels</mat-label>
+            <mat-select multiple formControlName="levels">
+              <mat-option
+                *ngFor="let level of filterView.levels"
+                [value]="level"
+              >
+                {{ "Level " + level }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-small">
+            <mat-label>Exclusive spells</mat-label>
+            <mat-select multiple formControlName="only">
+              <mat-option *ngFor="let only of filterView.onlies" [value]="only">
+                {{ only }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="input-small">
+            <mat-label>Equipment slots</mat-label>
+            <mat-select multiple formControlName="slots">
+              <mat-option *ngFor="let slot of filterView.slots" [value]="slot">
+                {{ slot }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
         </div>
-        <div class="input cb-input">
-          <mat-label>Only novice cards</mat-label>
-          <mat-checkbox formControlName="novice"></mat-checkbox>
+        <div class="selection-group">
+          <mat-form-field
+            class="src-input"
+            [ngClass]="{ 'input-small': innerWidth < 720 }"
+          >
+            <mat-label *ngIf="list">{{
+              "Search " +
+                (innerWidth < 720 ? "in " : "among ") +
+                list.length +
+                " spells"
+            }}</mat-label>
+            <input
+              matInput
+              class="search-input"
+              type="text"
+              formControlName="name"
+            />
+            <button
+              *ngIf="filterGroup.controls['name'].value"
+              class="clear-btn"
+              matSuffix
+              mat-icon-button
+              (click)="filterGroup.controls['name'].reset()"
+            >
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field
+            class="set-input"
+            [ngClass]="{ 'input-small': innerWidth < 720 }"
+          >
+            <mat-label>Spell sets</mat-label>
+            <mat-select multiple color="accent" formControlName="sets">
+              <mat-select-trigger>
+                {{ filterGroup.controls["sets"].value[0] || "" }}
+                <span
+                  *ngIf="(filterGroup.controls['sets'].value.length || 0) > 1"
+                  class="and-others"
+                >
+                  (+{{ (filterGroup.controls["sets"].value.length || 0) - 1 }}
+                  {{
+                    filterGroup.controls["sets"].value.length === 2
+                      ? "other"
+                      : "others"
+                  }})
+                </span>
+              </mat-select-trigger>
+              <mat-option *ngFor="let set of filterView.sets" [value]="set">
+                {{ set }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="selection-group">
+          <div class="input cb-input">
+            <mat-label>Apply strict filter</mat-label>
+            <mat-checkbox formControlName="strict"></mat-checkbox>
+          </div>
+          <div class="input cb-input">
+            <mat-label>Only novice cards</mat-label>
+            <mat-checkbox formControlName="novice"></mat-checkbox>
+          </div>
         </div>
       </form>
       <div class="actions">
