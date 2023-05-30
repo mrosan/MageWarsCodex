@@ -10,16 +10,25 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
+import { CatalogComponent } from './components/catalog/catalog.component';
+import { CatalogItemComponent } from './components/catalog-item/catalog-item.component';
 
 @NgModule({
-  declarations: [AppComponent, ListComponent, ListItemComponent],
+  declarations: [
+    AppComponent,
+    ListComponent,
+    ListItemComponent,
+    CatalogComponent,
+    CatalogItemComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,8 +41,9 @@ import { ListItemComponent } from './components/list-item/list-item.component';
     MatButtonModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatExpansionModule,
     MatCheckboxModule,
+    MatButtonToggleModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

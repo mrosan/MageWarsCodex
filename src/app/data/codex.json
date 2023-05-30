@@ -44,7 +44,7 @@
 	{
 		"name": "Attack Action",
 		"category": "GAME_TERM",
-		"description": "An attack action is a creature's action (quick or full) used to make an attack. An attack action might make multiple separate attacks against the same defender (see “Doublestrike” and “Triplestrike” in the Codex) or against different defenders (see “Sweeping” and “Zone Attacks” in the Codex). All of these multiple attacks are still considered one attack action.",
+		"description": "An attack action is a creature's action (quick or full) used to make an attack. An attack action might make multiple separate attacks against the same defender (see “Doublestrike” and “Triplestrike”) or against different defenders (see “Sweeping” and “Zone Attacks”). All of these multiple attacks are still considered one attack action.",
 		"image": ""
 	},
 	{
@@ -152,7 +152,7 @@
 	{
 		"name": "Cripple",
 		"category": "CONDITION_MARKER",
-		"description": "This is a poison condition. Creature is Restrained. At the end of each of its Action Phases, even if it is Incapacitated, the Crippled creature may attempt an escape roll for each Cripple condition on it: on a roll of 7 or higher, remove Cripple. Cripple has a removal cost of 4. Cannot affect conjurations.",
+		"description": "This is a poison condition. Creature is Restrained. At the end of each of its Action Phases, even if it is Incapacitated, the Crippled creature may attempt an escape roll for each Cripple condition on it: on a roll of 7 or higher, remove Cripple. Cripple has a removal cost of 4. Cannot affect conjurations. When a creature is affected by multiple Cripple conditions, it rolls to get out of each one individually. It may also attempt an escape roll even if Incapacitated.",
 		"image": "cripple.png"
 	},
 	{
@@ -188,7 +188,7 @@
 	{
 		"name": "Defender",
 		"category": "GAME_TERM",
-		"description": "A creature or conjuration which is being attacked. They may not necessarily be the target of that attack (see “Zone Attack” in the Codex).",
+		"description": "A creature or conjuration which is being attacked. They may not necessarily be the target of that attack (see “Zone Attack”).",
 		"image": ""
 	},
 	{
@@ -242,7 +242,7 @@
 	{
 		"name": "Epic",
 		"category": "SPELL_TRAIT",
-		"description": "",
+		"description": "Only 1 copy of this spell can be in a Mage’s spellbook.",
 		"image": ""
 	},
 	{
@@ -1010,7 +1010,7 @@
 	{
 		"name": "Septagram",
 		"category": "DOMINATION",
-		"description": "This zone, and all non-Mage objects within it, gain the Warded trait (See Warded in the Codex page 10). Note that Mages are very special and powerful creatures, constantly casting spells and flowing with magic, and are not easily warded. Thus, Septagram will not protect them.",
+		"description": "This zone, and all non-Mage objects within it, gain the Warded trait. Note that Mages are very special and powerful creatures, constantly casting spells and flowing with magic, and are not easily warded. Thus, Septagram will not protect them.",
 		"image": "septagram.jpg"
 	},
 	{
@@ -1076,7 +1076,7 @@
 	{
 		"name": "Grapple",
 		"category": "CONDITION_MARKER",
-		"description": "Grapple is a condition which represents a creature grabbing and holding onto another creature. The creature initiating the Grapple is the grappler and the other creature is the prey. When a Grapple condition occurs, place the grappler and prey creature cards next to each other, with a Grapple condition marker on top of the prey (see example). Both creatures have a shared Grapple condition. The prey is attached to the grappler. Both creatures are Restrained and Unmovable. They cannot Guard, and ignore guards when attacking each other. A creature can only be the prey of one Grapple condition. If another creature attempts to grapple it, the grapple fails. A creature can be the grappler in several Grapple conditions (it can hold onto multiple preys), as long as it has a separate attack with the Grapple trait for each prey it is holding. In such a case, place all of the prey cards next to the grappler, with a separate Grapple condition on each one. A creature cannot grapple a conjuration or itself. Uncontainable creatures cannot be grappled.",
+		"description": "Grapple is a condition which represents a creature grabbing and holding onto another creature. The creature initiating the Grapple is the grappler and the other creature is the prey. When a Grapple condition occurs, place the grappler and prey creature cards next to each other, with a Grapple condition marker on top of the prey. Both creatures have a shared Grapple condition. The prey is attached to the grappler. Both creatures are Restrained and Unmovable. They cannot Guard, and ignore guards when attacking each other. A creature can only be the prey of one Grapple condition. If another creature attempts to grapple it, the grapple fails. A creature can be the grappler in several Grapple conditions (it can hold onto multiple preys), as long as it has a separate attack with the Grapple trait for each prey it is holding. In such a case, place all of the prey cards next to the grappler, with a separate Grapple condition on each one. A creature cannot grapple a conjuration or itself. Uncontainable creatures cannot be grappled.",
 		"image": "grapple.png"
 	},
 	{
@@ -1140,75 +1140,75 @@
 		"image": "stagger.png"
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Spell",
+		"category": "GAME_TERM",
+		"description": "Anything that goes into your spellbook. So, basically, any card except for your mage.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Object",
+		"category": "GAME_TERM",
+		"description": "All creatures (include Mages), enchantments, conjurations, and equipment.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Friendly attacks",
+		"category": "EXPLANATION",
+		"description": "Creatures may attack friendly creatures. This is most frequently done to remove Sleep condition markers. A creature may even attack itself, if it is a legal target for its own attack. It may also attack an object attached to itself, for example a Tanglevine conjuration. When a creature attacks itself, or an object attached to itself, it may ignore guards. If a creature attacks itself, or an object attached to itself, it does not trigger its own damage barrier (if it has one) or a counterstrike from itself.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Zone attacks",
+		"category": "EXPLANATION",
+		"description": "When a Zone attack is resolved, the attacker chooses the order of objects to be attacked in that zone. If the source of the Zone attack is in that zone, and is attacked and destroyed by its own Zone attack, the Zone attack will still attack the other remaining objects in the zone.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Effect order",
+		"category": "EXPLANATION",
+		"description": "If an object is affected by multiple effects, they are applied in order from earliest to latest effects. When an enchantment is moved to a new target, it changes its order it has amongst effects in play, and acquires a new later “timestamp”.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Entering a zone",
+		"category": "EXPLANATION",
+		"description": "A creature only “enters” a zone if it moves there using a move action, or is Pushed or Teleported. Being Summoned or otherwise put into play in that zone does not count as “entering” the zone. Thus, traps and spells like Mangler Caltrops are not triggered when a creature is Summoned.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Equipment control",
+		"category": "EXPLANATION",
+		"description": "The Mage to whom the equipment is attached controls that equipment. For example, if you cast Sectarus on a friendly Mage, he will be able to attack with Sectarus, and plan curse spells for it. This is different from other spells, such as enchantments and conjurations, in which case control is retained by the caster of the spell. Note that you cannot cast, control, or use equipment which you are restricted from. For example, A Priestess cannot cast, control, or use a Staff of Beasts which is Beastmaster Only.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Guarding clarification",
+		"category": "EXPLANATION",
+		"description": "While a creature has a Guard marker, it loses, and cannot gain, the Flying trait. Whether or not you must attack a guard is only checked for once at the time you declare an attack. Once the attack is declared and legal, the presence of guards or ability to ignore them is no longer considered for that attack. For example, if you declare an attack on a creature, and then a guard is Pushed into the zone, your attack against the non-guard does not become “illegal”. As Walls occupy zone borders and not the zones themselves, they cannot be guarded.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Mage death",
+		"category": "EXPLANATION",
+		"description": "Once a Mage dies, he cannot perform any further actions, pay mana costs, cast spells, make a counterstrike, etc. Any enchantments and equipment attached to himself are immediately destroyed. Other objects he controls in the game remain in play. If a Mage dies, continue play until the end of that Phase (e.g. the Upkeep Phase, or the current creature's Action Phase.) If all remaining Mages die before the end of that Phase, the game is a draw.",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Mandatory actions",
+		"category": "EXPLANATION",
+		"description": "Effects such as Bloodthirsty or Taunt can have special interactions. • Example 1: A creature with Bloodthirsty is in a zone with two other enemy creatures, one of which is Guarding and undamaged, and the other one of which is damaged. Since the damaged creature is not a legal target for the attack, the creature is free of any obligation to attack, so it could either attack the Guard or take another action. • Example 2: A Wizard is in the same zone as an enemy Sosruko which has Taunted him. When the Wizard activates, he chooses to use his Quickcast action immediately before his activation to cast a Teleport spell to teleport the Wizard out of Sosruko's zone. Then, when the Wizard is choosing his normal action, he is no longer in Sosruko's zone so he is not bound by the Taunt effect. • Example 3: A Goran, Werewolf Pet with Bloodthirsty is in the same zone as a damaged enemy Wizard equipped with Suppression Cloak, with no other enemy creatures. When Goran activates, if Goran's controller has 2 or more mana in his mana supply, then Goran must attack the enemy Wizard and the controller must pay the 2 mana. If Goran's controller does not have 2 or more mana in his mana supply, Goran is unable to attack, so he is not forced to attack and can take another action. A Bash attack will trigger a Block, Reverse Attack, or similar enchantment. (Since the Bash attack is Unavoidable, the Block will be discarded without effect.) Zone borders are not considered to be inside the zones they border, so a Zone attack will not affect walls.",
 		"image": ""
 	},
 	{
-		"name": "",
+		"name": "Wall clarifications",
 		"category": "",
-		"description": "",
+		"description": "The walls around the outside of the arena are 'high walls' and thus will block the movement of Flying creatures. If a Flying creature is Pushed into an outside Wall it is bashed, just as if a non-Flying creature were pushed into the wall",
 		"image": ""
 	},
 	{
-		"name": "",
-		"category": "",
-		"description": "",
+		"name": "Priority",
+		"category": "GAME_TERM",
+		"description": "A Mage has Priority immediately before or after any creature activation, when it is their turn. This is anytime a Mage could use their Quickcast Action. Any number of available Priority effects (as well as a Quickcast Action) may occur during the same time.",
 		"image": ""
 	},
 	{

@@ -13,7 +13,7 @@ import {
   CodexItemCategory,
   CodexItemCategoryFilter,
 } from 'src/app/interfaces/codex-item';
-import { ListLoaderService } from 'src/app/services/list-loader.service';
+import { LoaderService } from 'src/app/services/loader.service';
 import { displayCategory } from 'src/app/utils/display';
 
 @Component({
@@ -21,26 +21,26 @@ import { displayCategory } from 'src/app/utils/display';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
 })
+// TODO List and Catalog should inherit from the same Component
 export class ListComponent implements OnInit, OnDestroy, AfterViewInit {
   public searchValue: string = '';
   public showCategoryFilter: boolean = false;
   public catFilters: CodexItemCategoryFilter[] = [];
   public list$: Observable<CodexItem[]>;
-  // TODO FormGroup
+  public list: CodexItem[] | undefined;
   searchFormControl: FormControl = new FormControl('');
-  filterFormControl: FormControl = new FormControl('');
   private sfcSub: Subscription | undefined;
-  private ffcSub: Subscription | undefined;
+  private listSub: Subscription | undefined;
 
-  constructor(
-    private loader: ListLoaderService,
-    private cdr: ChangeDetectorRef
-  ) {
+  constructor(private loader: LoaderService, private cdr: ChangeDetectorRef) {
     this.list$ = this.loader.getList();
     this.loadCategoryFilters();
   }
 
   ngOnInit(): void {
+    this.listSub = this.list$.subscribe((val) => {
+      this.list = val;
+    });
     this.sfcSub = this.searchFormControl.valueChanges.subscribe((input) => {
       this.refreshList(input);
     });
@@ -52,7 +52,7 @@ export class ListComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngOnDestroy(): void {
     this.sfcSub?.unsubscribe();
-    this.ffcSub?.unsubscribe();
+    this.listSub?.unsubscribe();
   }
 
   filterButtonToggle() {
@@ -85,10 +85,3 @@ export class ListComponent implements OnInit, OnDestroy, AfterViewInit {
     );
   }
 }
-
-/*
-- show all by default
-- search (input field filter)
-- filter by category (checkboxes)
-- option to hide icons in items
-*/

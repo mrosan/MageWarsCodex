@@ -1,4 +1,4 @@
-<div class="app" role="main">
+<div class="app" [ngClass]="{ contained: !wideScreen }" role="main">
   <div class="header">
     <img
       class="header-img"
@@ -7,9 +7,24 @@
       alt="Mage Wars logo"
     />
   </div>
-
-  <router-outlet>
-    <!-- TODO maybe multiple functions in the future -->
-    <app-list></app-list>
-  </router-outlet>
+  <div class="navigation">
+    <!-- TODO Mages tab, Spellbook tab -->
+    <mat-button-toggle-group name="tabs" [value]="selectedTab">
+      <mat-button-toggle
+        value="codex"
+        class="nav-btn"
+        color="accent"
+        (click)="navigateTo('codex')"
+        >Codex</mat-button-toggle
+      >
+      <mat-button-toggle
+        value="catalog"
+        class="nav-btn"
+        color="accent"
+        (click)="navigateTo('catalog')"
+        >Catalog</mat-button-toggle
+      >
+    </mat-button-toggle-group>
+  </div>
+  <router-outlet></router-outlet>
 </div>

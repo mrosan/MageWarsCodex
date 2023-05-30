@@ -4,11 +4,33 @@
 	align-items: center;
 	justify-content: center;
 	margin: 10px auto;
-	max-width: 800px;
 	//background-color: rgba(255, 239, 208, 0.527);
 	background-color: rgb(138, 0, 0);
 	//background-color: rgb(0, 0, 0);
 	border-radius: 1em;
+}
+
+.contained {
+	max-width: 800px;
+}
+
+.navigation{
+	margin-bottom: 4px;
+}
+
+.nav-btn {
+	width: 200px;
+	font-size: large;
+	font-weight: bold;
+}
+
+.mat-button-toggle{
+	background-color: rgb(255, 187, 0);
+}
+
+.mat-button-toggle-checked {
+	
+	background-color: rgb(182, 135, 7);
 }
 
 .header-img {

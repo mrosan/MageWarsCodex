@@ -14,7 +14,6 @@ function createWindow() {
 	});
 
 	//correctedPath = "file://" + path.normalize(`${__dirname}/dist/index.html`).replace(/\\/g, '/');
-	console.log(win);
 
 	win.loadURL(`file://${__dirname}/dist/mage-wars-codex/index.html`);
 
