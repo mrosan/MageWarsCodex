@@ -20,29 +20,14 @@
 	width: 600px;
 }
 
-.search-input {
-  // min-width: 350px;
-  // max-width: 500px;
-  // width: 100%;
+.search-small {
+	width: 300px;
 }
 
 .sub {
-	// display: flex;
-	// flex-direction: row;
-	// flex-wrap: wrap;
 	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: 33% 33% 33%;
 	padding: 0 0.5em;
-}
-
-.sub-title {
-	align-self: center;
-	margin-left: 1em;
-	font-size: 1.15em;
-}
-
-.sub-item {
-	//margin-right: 1.5em;
 }
 
 .filter-btn {

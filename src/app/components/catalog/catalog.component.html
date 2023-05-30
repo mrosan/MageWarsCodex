@@ -2,7 +2,7 @@
   <div>
     <mat-card class="inputs" *ngIf="filterView">
       <form class="selections" [formGroup]="filterGroup">
-        <mat-form-field class="input">
+        <mat-form-field class="input-small">
           <mat-label>Spell types</mat-label>
           <mat-select multiple color="accent" formControlName="types">
             <mat-option *ngFor="let type of filterView.types" [value]="type">
@@ -11,7 +11,7 @@
           </mat-select>
         </mat-form-field>
         <mat-form-field
-          class="input"
+          class="input-small"
           [ngClass]="{ strict: filterGroup.controls['strict'].value }"
         >
           <mat-label>Spell subtypes</mat-label>
@@ -27,7 +27,7 @@
           </mat-select>
         </mat-form-field>
         <mat-form-field
-          class="input"
+          class="input-small"
           [ngClass]="{ strict: filterGroup.controls['strict'].value }"
         >
           <mat-label>Spell schools</mat-label>
@@ -40,7 +40,7 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        <mat-form-field class="input">
+        <mat-form-field class="input-small">
           <mat-label>Spell levels</mat-label>
           <mat-select multiple formControlName="levels">
             <mat-option *ngFor="let level of filterView.levels" [value]="level">
@@ -48,7 +48,7 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        <mat-form-field class="input">
+        <mat-form-field class="input-small">
           <mat-label>Exclusive spells</mat-label>
           <mat-select multiple formControlName="only">
             <mat-option *ngFor="let only of filterView.onlies" [value]="only">
@@ -56,7 +56,7 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        <mat-form-field class="input">
+        <mat-form-field class="input-small">
           <mat-label>Equipment slots</mat-label>
           <mat-select multiple formControlName="slots">
             <mat-option *ngFor="let slot of filterView.slots" [value]="slot">
@@ -64,10 +64,16 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-        <mat-form-field class="src-input">
-          <mat-label *ngIf="list$ | async as list"
-            >Search among {{ list.length }} spells</mat-label
-          >
+        <mat-form-field
+          class="src-input"
+          [ngClass]="{ 'input-small': innerWidth < 720 }"
+        >
+          <mat-label *ngIf="list$ | async as list">{{
+            "Search " +
+              (innerWidth < 720 ? "in " : "among ") +
+              list.length +
+              " spells"
+          }}</mat-label>
           <input
             matInput
             class="search-input"
@@ -75,6 +81,7 @@
             formControlName="name"
           />
           <button
+            *ngIf="filterGroup.controls['name'].value"
             class="clear-btn"
             matSuffix
             mat-icon-button
@@ -83,7 +90,10 @@
             <mat-icon>close</mat-icon>
           </button>
         </mat-form-field>
-        <mat-form-field class="set-input">
+        <mat-form-field
+          class="set-input"
+          [ngClass]="{ 'input-small': innerWidth < 720 }"
+        >
           <mat-label>Spell sets</mat-label>
           <mat-select multiple color="accent" formControlName="sets">
             <mat-select-trigger>
