@@ -31,6 +31,7 @@ export class ListComponent implements OnInit, OnDestroy, AfterViewInit {
   searchFormControl: FormControl = new FormControl('');
   private sfcSub: Subscription | undefined;
   private listSub: Subscription | undefined;
+  public innerWidth: any;
 
   constructor(private loader: LoaderService, private cdr: ChangeDetectorRef) {
     this.list$ = this.loader.getList();
@@ -44,6 +45,7 @@ export class ListComponent implements OnInit, OnDestroy, AfterViewInit {
     this.sfcSub = this.searchFormControl.valueChanges.subscribe((input) => {
       this.refreshList(input);
     });
+    this.innerWidth = window.innerWidth;
   }
 
   ngAfterViewInit(): void {

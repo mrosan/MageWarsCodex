@@ -36,10 +36,6 @@ mat-form-field {
 	border-top: 2px solid rgb(138, 0, 0);
 }
 
-.input {
-	width: 200px;
-}
-
 .set-input {
 	width: 315px;
 }
@@ -60,6 +56,10 @@ mat-form-field {
 	.clear-btn {
 		opacity: 60%
 	}
+}
+
+.input-small {
+	width: 200px;
 }
 
 .embedded-input {

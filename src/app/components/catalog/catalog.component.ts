@@ -28,6 +28,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
   private fgSub: Subscription | undefined;
   private allSubTypes: string[] | undefined;
   public wideScreen: boolean = false;
+  public innerWidth: any;
 
   constructor(
     private loader: LoaderService,
@@ -72,6 +73,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
       this.loader.filterCatalog(val);
     });
     this.emitter.emitTab('catalog');
+    this.innerWidth = window.innerWidth;
   }
 
   ngOnDestroy(): void {

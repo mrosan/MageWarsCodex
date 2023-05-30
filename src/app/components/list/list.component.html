@@ -2,17 +2,18 @@
   <div class="inputs">
     <mat-card>
       <div class="main">
-        <mat-form-field class="search">
+        <mat-form-field
+          class="search"
+          [ngClass]="{ 'search-small': innerWidth < 720 }"
+        >
           <mat-label *ngIf="list$ | async as list"
-            >Search among {{ list.length }} rules, terms, and
-            keywords</mat-label
+            >Search among {{ list.length }} terms</mat-label
           >
           <input
             matInput
-            class="search-input"
             type="text"
             [formControl]="searchFormControl"
-            [(ngModel)]="searchValue"
+            [value]="searchValue"
           />
           <button
             *ngIf="searchValue"
@@ -34,8 +35,7 @@
         </div>
       </div>
       <div class="sub" *ngIf="showCategoryFilter">
-        <!-- <div class="sub-title">Filter by category:</div> -->
-        <div *ngFor="let cf of catFilters" class="sub-item">
+        <div *ngFor="let cf of catFilters">
           <mat-checkbox
             [(ngModel)]="cf.selected"
             (ngModelChange)="refreshList()"
@@ -45,9 +45,6 @@
       </div>
     </mat-card>
   </div>
-  <!-- <div class="list" *ngIf="list$ | async as list">
-    <app-list-item *ngFor="let item of list" [item]="item"></app-list-item>
-  </div> -->
   <div class="list">
     <app-list-item *ngFor="let item of list" [item]="item"></app-list-item>
   </div>
