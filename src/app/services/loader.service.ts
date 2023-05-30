@@ -6,6 +6,7 @@ import {
   SchoolWithLevel,
   EquipmentSlot,
 } from 'src/app/interfaces/catalog-item';
+import { Mage, Affinity } from '../interfaces/mage-item';
 import { BehaviorSubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
@@ -15,12 +16,15 @@ import { HttpClient } from '@angular/common/http';
 export class LoaderService {
   list: BehaviorSubject<CodexItem[]>;
   catalog: BehaviorSubject<CatalogItem[]>;
+  mages: BehaviorSubject<Mage[]>;
   private fullList: CodexItem[] = [];
   private fullCatalog: CatalogItem[] = [];
+  private mageList: Mage[] = [];
 
   constructor(private http: HttpClient) {
     this.list = new BehaviorSubject<CodexItem[]>([]);
     this.catalog = new BehaviorSubject<CatalogItem[]>([]);
+    this.mages = new BehaviorSubject<Mage[]>([]);
 
     // Try loading rules from database, if that fails use the local version
     this.http.get('not-yet-implemented/catch-error-instead.json').subscribe({
@@ -63,6 +67,23 @@ export class LoaderService {
         );
       },
     });
+    this.http.get('not-implemented-either/catch-error-instead.json').subscribe({
+      next: (data) => {
+        console.log('But... how? ', data);
+      },
+      error: (_) => {
+        import('../data/mages.json').then(
+          (mage) => {
+            this.mageList = this.#parseJson<Mage>(
+              mage,
+              this.#createMageItem.bind(this)
+            ).sort((a, b) => (a.name < b.name ? -1 : 1));
+            this.mages.next(this.mageList);
+          },
+          (err) => console.log(err)
+        );
+      },
+    });
   }
 
   getList() {
@@ -71,6 +92,10 @@ export class LoaderService {
 
   getCatalog() {
     return this.catalog;
+  }
+
+  getMages() {
+    return this.mages;
   }
 
   getAllSubTypes() {
@@ -245,6 +270,16 @@ export class LoaderService {
         ? EquipmentSlot[slot as keyof typeof EquipmentSlot]
         : undefined,
       set: item?.set ? item.set : 'Arena Core Set',
+    };
+  }
+
+  #createMageItem(id: string, item: any): Mage {
+    return {
+      id,
+      name: item.name,
+      affinities: [],
+      cardFront: 'assets/mages/' + item.images.front + '.jpg',
+      cardBack: 'assets/mages/' + item.images.back + '.jpg',
     };
   }
 

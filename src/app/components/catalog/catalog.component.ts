@@ -11,6 +11,7 @@ import {
 } from 'src/app/interfaces/catalog-item';
 import { LoaderService } from 'src/app/services/loader.service';
 import { EmitterService } from 'src/app/services/emitter.service';
+import { arenaSets } from 'src/app/data/sets';
 
 @Component({
   selector: 'app-catalog',
@@ -46,7 +47,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
       only: [''],
       slots: [[]],
       strict: [false],
-      sets: [[]],
+      sets: [arenaSets],
     }); // TODO type
   }
 
@@ -55,7 +56,8 @@ export class CatalogComponent implements OnInit, OnDestroy {
     this.listSub = this.list$.subscribe((val) => {
       this.list = val;
       if (!this.filterView && val.length) {
-        this.#setSets();
+        //Beware of infinite loops!
+        //this.#setSets();
         this.allSubTypes = this.loader.getAllSubTypes();
         this.filterView = {
           types: Object.values(SpellType),
@@ -66,6 +68,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
           onlies: this.loader.getAllOnly(),
           sets: this.loader.getAllSets(),
         };
+        this.loader.filterCatalog(this.filterGroup.value);
       }
     });
     this.fgSub = this.filterGroup.valueChanges.subscribe((val) => {
@@ -113,6 +116,8 @@ export class CatalogComponent implements OnInit, OnDestroy {
     const almostAllSets = this.loader
       .getAllSets()
       .filter((s) => s !== 'Forcemaster - Academy');
-    this.filterGroup.controls['sets'].setValue(almostAllSets);
+    this.filterGroup.controls['sets'].setValue(almostAllSets, {
+      emitEVent: false,
+    });
   }
 }

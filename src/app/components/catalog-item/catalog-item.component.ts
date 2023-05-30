@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { CatalogItem } from 'src/app/interfaces/catalog-item';
 
 @Component({
   selector: 'app-catalog-item',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./catalog-item.component.scss'],
 })
 export class CatalogItemComponent {
-  @Input() item: any;
+  @Input() item: CatalogItem | undefined;
 }

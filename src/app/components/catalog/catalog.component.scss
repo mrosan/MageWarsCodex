@@ -27,9 +27,15 @@ mat-form-field {
 
 .selections {
 	display: flex;
+	flex-direction: column;
+}
+
+.selection-group {
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
   width: 100%;
+
 }
 
 .strict {
