@@ -13,6 +13,7 @@
       <mat-button-toggle
         value="codex"
         class="nav-btn"
+        [ngClass]="{ 'btn-sm': innerWidth < 720 }"
         color="accent"
         (click)="navigateTo('codex')"
         >Codex</mat-button-toggle
@@ -20,6 +21,7 @@
       <mat-button-toggle
         value="mages"
         class="nav-btn"
+        [ngClass]="{ 'btn-sm': innerWidth < 720 }"
         color="accent"
         (click)="navigateTo('mages')"
         >Mages</mat-button-toggle
@@ -27,9 +29,18 @@
       <mat-button-toggle
         value="catalog"
         class="nav-btn"
+        [ngClass]="{ 'btn-sm': innerWidth < 720 }"
         color="accent"
         (click)="navigateTo('catalog')"
         >Catalog</mat-button-toggle
+      >
+      <mat-button-toggle
+        value="deck"
+        class="nav-btn"
+        [ngClass]="{ 'btn-sm': innerWidth < 720 }"
+        color="accent"
+        (click)="navigateTo('deck')"
+        >Spellbook</mat-button-toggle
       >
     </mat-button-toggle-group>
   </div>

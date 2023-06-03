@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListComponent } from './components/list/list.component';
 import { CatalogComponent } from './components/catalog/catalog.component';
 import { MagesComponent } from './components/mages/mages.component';
+import { DeckComponent } from './components/deck/deck.component';
 
 const routes: Routes = [
   { path: 'codex', component: ListComponent },
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'mages',
     component: MagesComponent,
+  },
+  {
+    path: 'deck',
+    component: DeckComponent,
   },
   { path: '', redirectTo: '/codex', pathMatch: 'full' },
 ];

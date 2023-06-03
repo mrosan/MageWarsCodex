@@ -8,4 +8,6 @@ import { CatalogItem } from 'src/app/interfaces/catalog-item';
 })
 export class CatalogItemComponent {
   @Input() item: CatalogItem | undefined;
+  @Input() selected: boolean = false;
+  @Input() addOverlay: boolean = true;
 }

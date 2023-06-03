@@ -1,5 +1,13 @@
 <div *ngIf="item?.image" class="cat">
-  <img class="cat-img" src="{{ item?.image }}" alt="Mage Wars card" />
+  <img
+    class="cat-img"
+    [ngClass]="{ glow: selected }"
+    src="{{ item?.image }}"
+    alt="Mage Wars card"
+  />
+  <div *ngIf="addOverlay" class="overlay">
+    <img class="overlay-icon" src="assets/add_card.png" />
+  </div>
 </div>
 <div *ngIf="!item?.image" class="cat">
   <mat-card class="blank-card">

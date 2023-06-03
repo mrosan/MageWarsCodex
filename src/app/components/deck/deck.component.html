@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="upper">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>0 / 120 spell points</mat-card-title>
+        <mat-card-subtitle>{{
+          mage?.name ?? "no mage selected"
+        }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="header" [ngClass]="{ 'header-sm': innerWidth < 720 }">
+          <img
+            class="mage-img"
+            src="{{ mage?.cardFront ?? 'assets/sm-card-back.jpg' }}"
+          />
+          <!-- <img
+            class="mage-img"
+            src="{{ mage?.cardBack ?? 'assets/sm-card-back.jpg' }}"
+          /> -->
+          <div class="stats">
+            <table>
+              <tr>
+                <td class="type">Creatures:</td>
+                <td>{{ typeStats["Creature"] }}</td>
+              </tr>
+              <tr>
+                <td class="type">Enchantments:</td>
+                <td>{{ typeStats["Enchantment"] }}</td>
+              </tr>
+              <tr>
+                <td class="type">Incantations:</td>
+                <td>{{ typeStats["Incantation"] }}</td>
+              </tr>
+              <tr>
+                <td class="type">Conjurations:</td>
+                <td>{{ typeStats["Conjuration"] }}</td>
+              </tr>
+              <tr>
+                <td class="type">Attack spells:</td>
+                <td>{{ typeStats["Attack spell"] }}</td>
+              </tr>
+            </table>
+            <p></p>
+            <div class="levels">
+              <table class="level-stats">
+                <tr *ngFor="let lvl of [1, 2, 3, 4, 5, 6, 7]">
+                  <td>Level {{ lvl }}:</td>
+                  <td>
+                    <span *ngFor="let i of [].constructor(levelStats[lvl - 1])"
+                      >|</span
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="card-list">
+    <mat-card *ngFor="let card of spells | keyvalue" class="card-cover">
+      <mat-card-content
+        ><img class="card" src="{{ card.value[0]?.image }}"
+      /></mat-card-content>
+      <div class="spacer"></div>
+      <mat-card-actions>
+        <div class="footer-item amount">
+          {{ card.value[1] }}
+        </div>
+        <div class="footer-item">
+          <button
+            mat-mini-fab
+            class="footer-button"
+            (click)="add(card.value[0])"
+          >
+            <mat-icon>add</mat-icon>
+          </button>
+          <button
+            mat-mini-fab
+            class="footer-button"
+            (click)="remove(card.value[0])"
+          >
+            <mat-icon>remove</mat-icon>
+          </button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

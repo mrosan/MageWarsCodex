@@ -12,6 +12,7 @@ import { EmitterService } from './services/emitter.service';
 export class AppComponent implements OnInit, OnDestroy {
   public wideScreen: boolean = false;
   public selectedTab: string | undefined; // TODO enum
+  public innerWidth: any;
 
   private wsSub: Subscription | undefined;
   private tabSub: Subscription | undefined;
@@ -35,6 +36,7 @@ export class AppComponent implements OnInit, OnDestroy {
       this.selectedTab = tab;
       this.cdr.detectChanges();
     });
+    this.innerWidth = window.innerWidth;
   }
 
   ngOnDestroy(): void {

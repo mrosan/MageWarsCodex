@@ -15,6 +15,7 @@ export interface CatalogItem {
   slot?: EquipmentSlot;
   //traits?: Trait[] TODO
   set: string;
+  sumLevel: number;
 }
 
 export interface CatalogFilterForm {

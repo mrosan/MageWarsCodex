@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
-
 import {
   CatalogItem,
   CatalogFilterForm,
@@ -11,6 +10,7 @@ import {
 } from 'src/app/interfaces/catalog-item';
 import { LoaderService } from 'src/app/services/loader.service';
 import { EmitterService } from 'src/app/services/emitter.service';
+import { BuilderService } from 'src/app/services/builder.service';
 import { arenaSets } from 'src/app/data/sets';
 
 @Component({
@@ -30,11 +30,13 @@ export class CatalogComponent implements OnInit, OnDestroy {
   private allSubTypes: string[] | undefined;
   public wideScreen: boolean = false;
   public innerWidth: any;
+  public selectedCard: CatalogItem | undefined;
 
   constructor(
     private loader: LoaderService,
     private fb: FormBuilder,
-    private emitter: EmitterService
+    private emitter: EmitterService,
+    private builder: BuilderService
   ) {
     this.list$ = this.loader.getCatalog();
     this.filterGroup = this.fb.group({
@@ -102,6 +104,15 @@ export class CatalogComponent implements OnInit, OnDestroy {
     this.filterGroup.reset();
     this.loader.filterCatalog(this.filterGroup.value);
     this.#setSets();
+  }
+
+  cardClicked(card: CatalogItem) {
+    if (this.selectedCard) return;
+    setTimeout(() => {
+      this.selectedCard = undefined;
+    }, 300);
+    this.selectedCard = card;
+    this.builder.addCard(card);
   }
 
   #checkEquipmentSelectForm() {

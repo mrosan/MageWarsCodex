@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { ListItemComponent } from './components/list-item/list-item.component';
 import { CatalogComponent } from './components/catalog/catalog.component';
 import { CatalogItemComponent } from './components/catalog-item/catalog-item.component';
 import { MagesComponent } from './components/mages/mages.component';
+import { DeckComponent } from './components/deck/deck.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { MagesComponent } from './components/mages/mages.component';
     CatalogComponent,
     CatalogItemComponent,
     MagesComponent,
+    DeckComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { MagesComponent } from './components/mages/mages.component';
     MatCheckboxModule,
     MatButtonToggleModule,
     MatSelectModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
