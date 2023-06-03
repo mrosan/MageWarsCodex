@@ -155,6 +155,8 @@
     <app-catalog-item
       *ngFor="let item of list"
       [item]="item"
+      [selected]="item.id === selectedCard?.id"
+      (click)="cardClicked(item)"
     ></app-catalog-item>
   </div>
 </div>

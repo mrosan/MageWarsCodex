@@ -14,6 +14,7 @@ import {
   CodexItemCategoryFilter,
 } from 'src/app/interfaces/codex-item';
 import { LoaderService } from 'src/app/services/loader.service';
+import { EmitterService } from 'src/app/services/emitter.service';
 import { displayCategory } from 'src/app/utils/display';
 
 @Component({
@@ -33,7 +34,11 @@ export class ListComponent implements OnInit, OnDestroy, AfterViewInit {
   private listSub: Subscription | undefined;
   public innerWidth: any;
 
-  constructor(private loader: LoaderService, private cdr: ChangeDetectorRef) {
+  constructor(
+    private loader: LoaderService,
+    private emitter: EmitterService,
+    private cdr: ChangeDetectorRef
+  ) {
     this.list$ = this.loader.getList();
     this.loadCategoryFilters();
   }
@@ -46,6 +51,7 @@ export class ListComponent implements OnInit, OnDestroy, AfterViewInit {
       this.refreshList(input);
     });
     this.innerWidth = window.innerWidth;
+    this.emitter.emitTab('codex');
   }
 
   ngAfterViewInit(): void {

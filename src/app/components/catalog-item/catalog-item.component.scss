@@ -1,11 +1,13 @@
 .cat {
 	margin: 10px;
+	position: relative;
 }
 
 .cat-img {
 	max-height: 320px;
 	max-width: 320px;
 	filter: drop-shadow(0 0 0.25rem black);
+  transition: .15s ease;
 }
 
 .blank-card {
@@ -14,4 +16,37 @@
 	width: 220px;
 	background-color: rgba(255, 193, 111, 0.863);
 	filter: drop-shadow(0 0 0.25rem black);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.overlay:hover {
+  opacity: 0.65;
+}
+
+.overlay-icon {
+	filter: drop-shadow(0 0 0.25rem white);
+	max-height: 100px;
+	max-width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.glow {
+	transform: scale(1.05);
+	filter: drop-shadow(0 0 1rem rgb(255, 220, 22));
 }

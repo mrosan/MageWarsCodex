@@ -252,8 +252,11 @@ export class LoaderService {
   }
 
   #createCatalogItem(id: string, item: any) {
-    let slot = Object.keys(EquipmentSlot).find((x) => {
+    const slot = Object.keys(EquipmentSlot).find((x) => {
       return item.slot && x === item.slot;
+    });
+    const schools = item.schools.map((x: any) => {
+      return { school: x.school, level: x.level } as SchoolWithLevel;
     });
     return {
       id,
@@ -261,15 +264,17 @@ export class LoaderService {
       image: item.image ? 'assets/cards/' + item.image + '.jpg' : '',
       type: SpellType[item.type as keyof typeof SpellType],
       subTypes: item.subtypes,
-      schools: item.schools.map((x: any) => {
-        return { school: x.school, level: x.level } as SchoolWithLevel;
-      }),
+      schools: schools,
       novice: Boolean(item?.novice),
       only: item?.only ?? '',
       slot: slot
         ? EquipmentSlot[slot as keyof typeof EquipmentSlot]
         : undefined,
       set: item?.set ? item.set : 'Arena Core Set',
+      sumLevel: schools.reduce(
+        (sum: number, cur: SchoolWithLevel) => +sum + +cur.level,
+        0
+      ),
     };
   }
 
