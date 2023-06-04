@@ -9,6 +9,7 @@ export enum Outcome {
   DECK_LIMIT = 'Your spellbook is already full.',
   SPELL_LIMIT = "You can't add any more of this spell to your spellbook.",
   EPIC_LIMIT = 'You already have this Epic spell in your spellbook.',
+  INPUT_ERROR = 'An imported card is invalid.',
 }
 
 export enum Validity {
@@ -46,7 +47,13 @@ export class BuilderService {
     return this.spellBook$;
   }
 
-  addCard(card: CatalogItem): Outcome {
+  addCard(card: CatalogItem, skipNoti = false): Outcome {
+    if (!card) {
+      this.snackBar.open(Outcome.INPUT_ERROR, '', {
+        duration: 2000,
+      });
+      return Outcome.INPUT_ERROR;
+    }
     if (this.spellBook.size > 121) {
       this.snackBar.open(Outcome.DECK_LIMIT, '', {
         duration: 2000,
@@ -72,7 +79,9 @@ export class BuilderService {
     }
 
     this.spellBook.set(card.id, [card, duplicates]);
-    this.spellBook$.next(this.spellBook);
+    if (!skipNoti) {
+      this.spellBook$.next(this.spellBook);
+    }
     return Outcome.SUCCESS;
   }
 
@@ -86,6 +95,12 @@ export class BuilderService {
       }
       this.spellBook$.next(this.spellBook);
     }
+  }
+
+  resetBook() {
+    this.spellBook.clear();
+    this.spellBook$.next(this.spellBook);
+    this.selectedMage = undefined;
   }
 
   countPoints(): number {
@@ -158,6 +173,14 @@ export class BuilderService {
       res.push(Validity.OVERFLOW);
     }
     return res;
+  }
+
+  parseImport(val: [Mage | undefined, CatalogItem[]]) {
+    this.selectedMage = val[0];
+    for (let card of val[1]) {
+      this.addCard(card, true);
+    }
+    this.spellBook$.next(this.spellBook);
   }
 
   #matchAffinity(swl: SchoolWithLevel, aff: Affinity): boolean {

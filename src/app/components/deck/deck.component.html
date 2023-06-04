@@ -65,6 +65,40 @@
           </div>
         </div>
       </mat-card-content>
+      <mat-card-actions class="header-action">
+        <input
+          #fileUpload
+          [accept]="'.txt'"
+          type="file"
+          class="file-input"
+          (change)="import($event)"
+        />
+        <div class="spacer"></div>
+        <button
+          mat-raised-button
+          color="accent"
+          class="header-action"
+          (click)="fileUpload.click()"
+        >
+          Import
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          class="header-action"
+          (click)="export()"
+        >
+          Export
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          class="header-action"
+          (click)="reset()"
+        >
+          Reset
+        </button>
+      </mat-card-actions>
     </mat-card>
   </div>
   <div class="card-list">

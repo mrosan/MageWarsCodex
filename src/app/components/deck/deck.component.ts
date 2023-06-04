@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
 import { BuilderService, Validity } from 'src/app/services/builder.service';
 import { LoaderService } from 'src/app/services/loader.service';
+import { EmitterService } from 'src/app/services/emitter.service';
 import { Mage } from 'src/app/interfaces/mage-item';
 import { CatalogItem } from 'src/app/interfaces/catalog-item';
 
@@ -29,7 +30,11 @@ export class DeckComponent implements OnInit, OnDestroy {
   bookErrors: Validity[] = [];
   maxPoints = 120;
 
-  constructor(private builder: BuilderService, private loader: LoaderService) {}
+  constructor(
+    private builder: BuilderService,
+    private loader: LoaderService,
+    private emitter: EmitterService
+  ) {}
 
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;
@@ -56,6 +61,7 @@ export class DeckComponent implements OnInit, OnDestroy {
         this.maxPoints
       );
     });
+    this.emitter.emitTab('deck');
   }
 
   ngOnDestroy(): void {
@@ -68,5 +74,21 @@ export class DeckComponent implements OnInit, OnDestroy {
 
   remove(card: CatalogItem) {
     this.builder.removeCard(card);
+  }
+
+  reset() {
+    this.builder.resetBook();
+    this.mage = undefined;
+  }
+
+  async import(event: Event) {
+    let result = await this.loader.importBook(event);
+    this.reset();
+    this.builder.parseImport(result);
+    this.mage = result[0];
+  }
+
+  export() {
+    this.loader.exportBook(this.mage, this.spells);
   }
 }

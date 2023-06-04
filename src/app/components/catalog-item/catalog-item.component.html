@@ -6,7 +6,11 @@
     alt="Mage Wars card"
   />
   <div *ngIf="addOverlay" class="overlay">
-    <img class="overlay-icon" src="assets/add_card.png" />
+    <img
+      class="overlay-icon noselect"
+      src="assets/add_card.png"
+      draggable="false"
+    />
   </div>
 </div>
 <div *ngIf="!item?.image" class="cat">
