@@ -212,6 +212,37 @@ export class LoaderService {
     this.catalog.next(filteredList);
   }
 
+  exportBook(mage: Mage | undefined, book: Map<string, [CatalogItem, number]>) {
+    let blob = [mage ? mage.name : 'NO_MAGE'];
+    for (let item of book.values()) {
+      for (let i = 0; i < item[1]; i++) {
+        blob.push('\n' + item[0].name);
+      }
+    }
+    let file = new Blob(blob, {
+      type: 'text/plain',
+      endings: 'native',
+    });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(file);
+    link.download = 'export.txt';
+    link.click();
+    link.remove();
+  }
+
+  async importBook(event: any): Promise<[Mage | undefined, CatalogItem[]]> {
+    const file: File = event.target.files[0];
+    let rawResult = await file.text();
+    let result = rawResult.split('\r\n');
+    let mage = this.mageList.find((mage) => mage.name === result[0]);
+    let cardList = result
+      .slice(1)
+      .map(
+        (cardName) => this.fullCatalog.find((item) => item.name === cardName)!
+      );
+    return [mage, cardList];
+  }
+
   #filterName(filteredList: any, searchFilter: string) {
     if (searchFilter.includes(' ')) {
       return filteredList.filter((item: any) =>

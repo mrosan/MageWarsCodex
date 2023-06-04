@@ -17,6 +17,10 @@
 	flex-direction: column;
 }
 
+.header-action {
+	margin: 0 0.5em;
+}
+
 .mage-img {
 	width: 250px;
 	height: 100%;
@@ -93,4 +97,8 @@ mat-card-actions {
 
 .subtitle {
 	margin-right: 10px;
+}
+
+.file-input {
+	display: none;
 }
