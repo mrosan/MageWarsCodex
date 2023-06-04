@@ -50,6 +50,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
       slots: [[]],
       strict: [false],
       sets: [arenaSets],
+      epic: [false],
     }); // TODO type
   }
 

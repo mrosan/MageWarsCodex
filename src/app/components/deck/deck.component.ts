@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
-import { BuilderService } from 'src/app/services/builder.service';
+import { BuilderService, Validity } from 'src/app/services/builder.service';
 import { LoaderService } from 'src/app/services/loader.service';
 import { Mage } from 'src/app/interfaces/mage-item';
 import { CatalogItem } from 'src/app/interfaces/catalog-item';
@@ -24,7 +24,10 @@ export class DeckComponent implements OnInit, OnDestroy {
     Equipment: 0,
     Incantation: 0,
   }; // TODO do this programatically
-  public innerWidth: any;
+  innerWidth: any;
+  spentPoints: number = 0;
+  bookErrors: Validity[] = [];
+  maxPoints = 120;
 
   constructor(private builder: BuilderService, private loader: LoaderService) {}
 
@@ -47,6 +50,11 @@ export class DeckComponent implements OnInit, OnDestroy {
         this.levelStats[v[0].sumLevel - 1] += v[1];
         this.typeStats[v[0].type] += v[1];
       });
+      this.spentPoints = this.builder.countPoints();
+      this.bookErrors = this.builder.validateBook(
+        this.spentPoints,
+        this.maxPoints
+      );
     });
   }
 

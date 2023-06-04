@@ -2,21 +2,30 @@
   <div class="upper">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>0 / 120 spell points</mat-card-title>
-        <mat-card-subtitle>{{
-          mage?.name ?? "no mage selected"
-        }}</mat-card-subtitle>
+        <mat-card-title>
+          <span>{{ spentPoints }} / {{ maxPoints }} spell points — </span>
+          <span class="valid" *ngIf="!bookErrors.length">valid</span>
+          <span class="invalid" *ngIf="bookErrors.length">invalid</span>
+          <span> spellbook</span>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <span *ngIf="mage && !bookErrors.length">{{ mage.name }}</span>
+          <span class="subtitle" *ngFor="let err of bookErrors">{{ err }}</span>
+        </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <div class="header" [ngClass]="{ 'header-sm': innerWidth < 720 }">
           <img
+            *ngIf="mage?.cardFront"
             class="mage-img"
             src="{{ mage?.cardFront ?? 'assets/sm-card-back.jpg' }}"
           />
-          <!-- <img
+          <img
+            *ngIf="!mage?.cardFront"
             class="mage-img"
-            src="{{ mage?.cardBack ?? 'assets/sm-card-back.jpg' }}"
-          /> -->
+            src="{{ 'assets/sm-card-back.jpg' }}"
+            [routerLink]="['/mages']"
+          />
           <div class="stats">
             <table>
               <tr>
@@ -61,7 +70,7 @@
   <div class="card-list">
     <mat-card *ngFor="let card of spells | keyvalue" class="card-cover">
       <mat-card-content
-        ><img class="card" src="{{ card.value[0]?.image }}"
+        ><img class="card" src="{{ card.value[0].image }}"
       /></mat-card-content>
       <div class="spacer"></div>
       <mat-card-actions>

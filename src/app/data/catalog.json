@@ -201,7 +201,8 @@
 		"image": "1aea1576-11e2-413c-b49a-50493f07fe99",
 		"slot": "",
 		"only": "Dark Mage",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Darkfenne Hydra",
@@ -558,7 +559,8 @@
 		"image": "3eaae143-ac4b-4d8b-9396-83f8215aed51",
 		"slot": "MAIN_OR_OFFHAND",
 		"only": "Necromancer",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Dawn's Bastion",
@@ -854,7 +856,8 @@
 		],
 		"image": "5eca0e21-79c9-495b-b6ee-29f0a54ea894",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"epic": "true"
 	},
 	{
 		"name": "Storm Drake Hide",
@@ -984,7 +987,8 @@
 		],
 		"image": "6a65ca7e-df13-4c27-90cb-44d4c86b2610",
 		"slot": "",
-		"only":"Warlock"
+		"only":"Warlock",
+		"epic": "true"
 	},
 	{
 		"name": "Flank Attack",
@@ -1013,7 +1017,8 @@
 		"image": "6a624136-aa0f-46bb-a4a9-8758b96bb8ae",
 		"slot": "",
 		"only": "Paladin",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"epic": "true"
 	},
 	{
 		"name": "Spitting Raptor",
@@ -1074,7 +1079,8 @@
 		"image": "6dc4c536-39c3-4f0d-83f8-1a4cc5874e9b",
 		"slot": "MAIN_OR_OFFHAND",
 		"only": "Siren",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"epic": "true"
 	},
 	{
 		"name": "V'Tarrian Energy Wave",
@@ -1489,8 +1495,8 @@
 		"subtypes": ["Dark Elf", "Cleric"],
 		"schools": [
 			{
-				"school": "",
-				"level": ""
+				"school": "DARK",
+				"level": "1"
 			}
 		],
 		"image": "9a1370a0-44cb-47ac-a736-807f96a51785",
@@ -1727,7 +1733,8 @@
 			}
 		],
 		"image": "20ee0189-9f93-4000-93f0-b236bbc20c67",
-		"slot": ""
+		"slot": "",
+		"epic": "true"
 	},
 	{
 		"name": "Group Heal",
@@ -1768,7 +1775,8 @@
 		"image": "22ea2891-f959-4d40-9123-def5bb2e3e23",
 		"slot": "",
 		"only": "Warlord",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"epic": "true"
 	},
 	{
 		"name": "Hellfire Trap",
@@ -1836,7 +1844,8 @@
 		],
 		"image": "27dacd66-4f54-465e-a728-10358b0c7548",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"epic": "true"
 	},
 	{
 		"name": "Stonegaze Basilisk",
@@ -1864,7 +1873,8 @@
 		"image": "31f4cf44-febc-46fb-920c-5293a7e2d615",
 		"slot": "",
 		"only": "Necromancer",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Stranglevine",
@@ -1995,8 +2005,8 @@
 		"subtypes": ["Ring"],
 		"schools": [
 			{
-				"school": "",
-				"level": ""
+				"school": "WATER",
+				"level": "1"
 			}
 		],
 		"image": "44e16242-5bbf-479a-b92a-aba214250795",
@@ -2254,7 +2264,8 @@
 		],
 		"image": "71e32301-4724-497d-9224-9f052fcf9808",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"epic": "true"
 	},
 	{
 		"name": "Standard Bearer",
@@ -2956,7 +2967,8 @@
 		],
 		"image": "837ef959-dab8-42b1-9bb9-4678efe2ad47",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"epic": "true"
 	},
 	{
 		"name": "Defense Ring",
@@ -3413,7 +3425,8 @@
 			}
 		],
 		"image": "26208d5a-4b15-41ee-880c-2dcf896ac45c",
-		"slot": ""
+		"slot": "",
+		"epic": "true"
 	},
 	{
 		"name": "Sosruko, Ferret Companion",
@@ -3455,7 +3468,8 @@
 		"image": "41138f05-1492-444a-b4e0-888247b95349",
 		"slot": "",
 		"only":"Warlord",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"epic": "true"
 	},
 	{
 		"name": "Skeelax, Taunting Imp",
@@ -3625,7 +3639,8 @@
 		],
 		"image": "93627f10-0699-4aa9-a18a-3fe06fd1b7b1",
 		"slot": "",
-		"only": "Holy Mage"
+		"only": "Holy Mage",
+		"epic": "true"
 	},
 	{
 		"name": "Minor Heal",
@@ -4080,7 +4095,8 @@
 		],
 		"image": "a6a69bf2-56a1-4f73-b62e-d1423983eddf",
 		"slot": "",
-		"only":"Beastmaster"
+		"only":"Beastmaster",
+		"epic": "true"
 	},
 	{
 		"name": "Leather Gloves",
@@ -4181,7 +4197,8 @@
 			}
 		],
 		"image": "a482c083-20d2-46d8-9dbb-83e8405b2aea",
-		"slot": ""
+		"slot": "",
+		"epic": "true"
 	},
 	{
 		"name": "Battle Fury",
@@ -4202,7 +4219,7 @@
 		"subtypes": ["Acid"],
 		"schools": [
 			{
-				"school": "WAR",
+				"school": "WATER",
 				"level": "1"
 			}
 		],
@@ -4596,7 +4613,8 @@
 		"image": "b79e9334-a55e-4ce6-b366-1029ebe6917d",
 		"slot": "",
 		"only": "Paladin",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"epic": "true"
 	},
 	{
 		"name": "Wand of Healing",
@@ -4679,7 +4697,8 @@
 		],
 		"image": "b684d6b9-0bc0-4735-998b-026a82ce7e4b",
 		"slot": "",
-		"only":"Warlock"
+		"only":"Warlock",
+		"epic": "true"
 	},
 	{
 		"name": "Teleport",
@@ -4700,8 +4719,8 @@
 		"subtypes": ["Vampiric"],
 		"schools": [
 			{
-				"school": "",
-				"level": ""
+				"school": "DARK",
+				"level": "2"
 			}
 		],
 		"image": "b981c228-b1e5-4318-a7ec-444c647eed87",
@@ -4720,7 +4739,8 @@
 		"image": "b0993b6c-e604-4ba4-86d7-b45e53daae9b",
 		"slot": "",
 		"only": "Druid",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Giant Wolf Spider",
@@ -4890,7 +4910,8 @@
 		"image": "be8a0047-ad80-44c5-91cb-ab7a65cbdf1e",
 		"slot": "",
 		"only": "Necromancer",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Steal Enchantment",
@@ -4975,7 +4996,8 @@
 		"image": "c1a636f3-a019-4202-a629-1d00fa91efe1",
 		"slot": "",
 		"only": "Warlord",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"epic": "true"
 	},
 	{
 		"name": "Shoalsdeep Crocodile",
@@ -5108,7 +5130,8 @@
 		"image": "c42f5b13-b348-440a-962e-40ed4fa48603",
 		"slot": "",
 		"only": "Forcemaster",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"epic": "true"
 	},
 	{
 		"name": "Deptonne Berserker",
@@ -5149,7 +5172,8 @@
 			}
 		],
 		"image": "c175d5b3-b5b7-4e1b-896a-cd9bef3c790c.2",
-		"slot": ""
+		"slot": "",
+		"epic": "true"
 	},
 	{
 		"name": "Rajan's Fury",
@@ -5361,7 +5385,8 @@
 			}
 		],
 		"image": "cfbeb5ae-3c91-4b05-94e2-bbde8bec21f9",
-		"slot": ""
+		"slot": "",
+		"epic": "true"
 	},
 	{
 		"name": "Ballad of Courage",
@@ -5474,7 +5499,8 @@
 			}
 		],
 		"image": "d6f98712-aa0d-45b5-950e-7f9b991f5684",
-		"slot": ""
+		"slot": "",
+		"epic": "true"
 	},
 	{
 		"name": "Divine Intervention",
@@ -5488,7 +5514,8 @@
 		],
 		"image": "d7ad20c5-f185-4e32-beec-f6e120e05719",
 		"slot": "",
-		"only": "Holy Mage"
+		"only": "Holy Mage",
+		"epic": "true"
 	},
 	{
 		"name": "Gerard Matranga",
@@ -5667,7 +5694,8 @@
 		],
 		"image": "d7130cee-5fc4-4922-b10e-51c977b5d581",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"epic": "true"
 	},
 	{
 		"name": "Fireball",
@@ -5967,7 +5995,8 @@
 		"image": "de856909-14ae-4a6c-910a-88d1c33b86eb",
 		"slot": "",
 		"only": "Warlord",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"epic": "true"
 	},
 	{
 		"name": "Conquer",
@@ -6011,7 +6040,8 @@
 		"image": "e4fb0871-99e8-40c3-b744-828400701c36",
 		"slot": "",
 		"only": "Nature Mage",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Illusiory Leggings",
@@ -6115,7 +6145,8 @@
 		"image": "e8ee7c9f-0438-4740-8507-b5f065495df9",
 		"slot": "",
 		"only": "War Mage",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"epic": "true"
 	},
 	{
 		"name": "Shoalsdeep Trident",
@@ -6371,7 +6402,8 @@
 		],
 		"image": "ee196806-7dc0-4de8-af56-50b3b76c2206",
 		"slot": "",
-		"only": "Wizard"
+		"only": "Wizard",
+		"epic": "true"
 	},
 	{
 		"name": "Gurmash, Orc Sergeant",
@@ -6604,7 +6636,8 @@
 		],
 		"image": "f397a9b9-24dd-4f0b-a3a0-17337ec69d9f",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"epic": "true"
 	},
 	{
 		"name": "Samara Tree",
@@ -6619,7 +6652,8 @@
 		"image": "f839c0c0-ed2f-4440-931f-ec5ecf6b385d",
 		"slot": "",
 		"only": "Druid",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Healing Charm",
@@ -6789,7 +6823,8 @@
 		],
 		"image": "fed20306-b9fa-4351-acb0-126701a1bd8f",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"epic": "true"
 	},
 	{
 		"name": "Signet of the Dawnbreaker",
@@ -6846,7 +6881,8 @@
 		],
 		"image": "altar_of_infernia",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"epic": "true"
 	},
 	{
 		"name": "Ballista",
@@ -7062,7 +7098,8 @@
 		],
 		"image": "meredia_s_blessing",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"epic": "true"
 	},
 	{
 		"name": "Messenger of Bim-Shalla",
