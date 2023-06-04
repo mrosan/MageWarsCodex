@@ -4,6 +4,7 @@ import {
   CatalogItem,
   SpellType,
   SchoolWithLevel,
+  School,
   EquipmentSlot,
 } from 'src/app/interfaces/catalog-item';
 import { Mage, Affinity } from '../interfaces/mage-item';
@@ -151,6 +152,7 @@ export class LoaderService {
     filteredList = filteredList.filter((item) => {
       let valid = true;
       if (filter.novice) valid = valid && (item?.novice ?? false);
+      if (filter.epic) valid = valid && (item?.epic ?? false);
       if (valid && filter.types?.length)
         valid = valid && filter.types.includes(item.type);
       if (valid && filter.subTypes?.length) {
@@ -256,8 +258,15 @@ export class LoaderService {
       return item.slot && x === item.slot;
     });
     const schools = item.schools.map((x: any) => {
-      return { school: x.school, level: x.level } as SchoolWithLevel;
+      return {
+        school: School[x.school as keyof typeof School],
+        level: x.level,
+      } as SchoolWithLevel;
     });
+    const sumLvl = schools.reduce(
+      (sum: number, cur: SchoolWithLevel) => +sum + +cur.level,
+      0
+    );
     return {
       id,
       name: item.name,
@@ -266,15 +275,13 @@ export class LoaderService {
       subTypes: item.subtypes,
       schools: schools,
       novice: Boolean(item?.novice),
+      epic: Boolean(item?.epic),
       only: item?.only ?? '',
       slot: slot
         ? EquipmentSlot[slot as keyof typeof EquipmentSlot]
         : undefined,
       set: item?.set ? item.set : 'Arena Core Set',
-      sumLevel: schools.reduce(
-        (sum: number, cur: SchoolWithLevel) => +sum + +cur.level,
-        0
-      ),
+      sumLevel: sumLvl,
     };
   }
 
@@ -282,9 +289,25 @@ export class LoaderService {
     return {
       id,
       name: item.name,
-      affinities: [],
+      affinities: item.affinities.map((a: any) => {
+        let school = a.school;
+        let excludeSchool = false;
+        if (a.school && a.school.startsWith('!')) {
+          excludeSchool = true;
+          school = school.slice(1);
+        }
+        return {
+          multiplier: a.multiplier,
+          school: School[school as keyof typeof School],
+          type: SpellType[a.type as keyof typeof SpellType],
+          excludeSchool: excludeSchool,
+          subtype: a.subtype,
+          level: a.level,
+        } as Affinity;
+      }),
       cardFront: 'assets/mages/' + item.images.front + '.jpg',
       cardBack: 'assets/mages/' + item.images.back + '.jpg',
+      only: item.only,
     };
   }
 

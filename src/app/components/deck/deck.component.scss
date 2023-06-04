@@ -28,9 +28,8 @@
 
 .levels {
 	overflow-x: auto;
-  //overflow-y: hidden;
   white-space: nowrap;
-	max-width: 400px;
+	max-width: 320px;
 
 	.level-stats {
 		display: inline-block;
@@ -82,4 +81,16 @@ mat-card-actions {
 
 .footer-button {
 	margin-left: 0.5em;
+}
+
+.valid {
+	color: green;
+}
+
+.invalid {
+	color: red;
+}
+
+.subtitle {
+	margin-right: 10px;
 }

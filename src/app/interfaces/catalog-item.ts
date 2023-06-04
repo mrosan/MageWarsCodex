@@ -11,6 +11,7 @@ export interface CatalogItem {
   schools: SchoolWithLevel[];
   image: string;
   novice?: boolean;
+  epic?: boolean;
   only?: string;
   slot?: EquipmentSlot;
   //traits?: Trait[] TODO
