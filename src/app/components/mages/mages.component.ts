@@ -35,4 +35,7 @@ export class MagesComponent implements OnInit, OnDestroy {
   mageSelected(mage: Mage) {
     this.selectedMage = this.builder.selectMage(mage);
   }
+
+  // TODO onInit highlight selected mage
+  // TODO deselecting mage -> deck spellpoints bug
 }

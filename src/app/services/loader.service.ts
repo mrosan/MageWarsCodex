@@ -214,6 +214,7 @@ export class LoaderService {
 
   exportBook(mage: Mage | undefined, book: Map<string, [CatalogItem, number]>) {
     let blob = [mage ? mage.name : 'NO_MAGE'];
+    // TODO handle empty book
     for (let item of book.values()) {
       for (let i = 0; i < item[1]; i++) {
         blob.push('\n' + item[0].name);

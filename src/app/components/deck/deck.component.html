@@ -102,28 +102,20 @@
     </mat-card>
   </div>
   <div class="card-list">
-    <mat-card *ngFor="let card of spells | keyvalue" class="card-cover">
+    <mat-card *ngFor="let card of spells" class="card-cover">
       <mat-card-content
-        ><img class="card" src="{{ card.value[0].image }}"
+        ><img class="card" src="{{ card[0].image }}"
       /></mat-card-content>
       <div class="spacer"></div>
       <mat-card-actions>
         <div class="footer-item amount">
-          {{ card.value[1] }}
+          {{ card[1] }}
         </div>
         <div class="footer-item">
-          <button
-            mat-mini-fab
-            class="footer-button"
-            (click)="add(card.value[0])"
-          >
+          <button mat-mini-fab class="footer-button" (click)="add(card[0])">
             <mat-icon>add</mat-icon>
           </button>
-          <button
-            mat-mini-fab
-            class="footer-button"
-            (click)="remove(card.value[0])"
-          >
+          <button mat-mini-fab class="footer-button" (click)="remove(card[0])">
             <mat-icon>remove</mat-icon>
           </button>
         </div>

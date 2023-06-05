@@ -3289,7 +3289,8 @@
 		],
 		"image": "6520a411-1553-4b09-baf1-d814ba92ad28",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"epic":"true"
 	},
 	{
 		"name": "Ring of Beasts",

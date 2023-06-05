@@ -4,6 +4,7 @@ import { BuilderService, Validity } from 'src/app/services/builder.service';
 import { LoaderService } from 'src/app/services/loader.service';
 import { EmitterService } from 'src/app/services/emitter.service';
 import { Mage } from 'src/app/interfaces/mage-item';
+import { SpellType } from 'src/app/interfaces/catalog-item';
 import { CatalogItem } from 'src/app/interfaces/catalog-item';
 
 @Component({
@@ -14,7 +15,7 @@ import { CatalogItem } from 'src/app/interfaces/catalog-item';
 export class DeckComponent implements OnInit, OnDestroy {
   mage: Mage | undefined;
   spells$!: BehaviorSubject<Map<string, [CatalogItem, number]>>;
-  spells!: Map<string, [CatalogItem, number]>;
+  spells: [CatalogItem, number][] = [];
   spellSub: Subscription | undefined;
   levelStats: number[] = [0, 0, 0, 0, 0, 0, 0];
   typeStats = {
@@ -51,10 +52,11 @@ export class DeckComponent implements OnInit, OnDestroy {
         Incantation: 0,
       };
       val.forEach((v) => {
-        this.spells = val;
         this.levelStats[v[0].sumLevel - 1] += v[1];
         this.typeStats[v[0].type] += v[1];
+        this.spells.push(v);
       });
+      this.sortSpells();
       this.spentPoints = this.builder.countPoints();
       this.bookErrors = this.builder.validateBook(
         this.spentPoints,
@@ -89,6 +91,27 @@ export class DeckComponent implements OnInit, OnDestroy {
   }
 
   export() {
-    this.loader.exportBook(this.mage, this.spells);
+    this.loader.exportBook(this.mage, this.spells$.getValue());
   }
+
+  sortSpells() {
+    const sortOrder = [
+      SpellType.CREATURE,
+      SpellType.ENCHANTMENT,
+      SpellType.INCANTATION,
+      SpellType.CONJURATION,
+      SpellType.EQUIPMENT,
+      SpellType.ATTACK,
+    ];
+    this.spells.sort((a, b) => {
+      if (a[0].type === b[0].type) {
+        return a[0].name < b[0].name ? -1 : 1;
+      } else {
+        return sortOrder.indexOf(a[0].type) - sortOrder.indexOf(b[0].type);
+      }
+    });
+  }
+
+  // TODO filter options
+  // TODO back to top
 }
