@@ -51,6 +51,7 @@ export class DeckComponent implements OnInit, OnDestroy {
         Equipment: 0,
         Incantation: 0,
       };
+      this.spells = [];
       val.forEach((v) => {
         this.levelStats[v[0].sumLevel - 1] += v[1];
         this.typeStats[v[0].type] += v[1];
