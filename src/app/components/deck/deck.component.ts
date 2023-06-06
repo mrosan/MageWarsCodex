@@ -51,6 +51,7 @@ export class DeckComponent implements OnInit, OnDestroy {
         Equipment: 0,
         Incantation: 0,
       };
+      this.spells = [];
       val.forEach((v) => {
         this.levelStats[v[0].sumLevel - 1] += v[1];
         this.typeStats[v[0].type] += v[1];
@@ -78,14 +79,19 @@ export class DeckComponent implements OnInit, OnDestroy {
     this.builder.removeCard(card);
   }
 
-  reset() {
-    this.builder.resetBook();
-    this.mage = undefined;
+  reset(skipConfirm: boolean = false) {
+    if (
+      skipConfirm ||
+      confirm('Are you sure you want to clear your spellbook?')
+    ) {
+      this.builder.resetBook();
+      this.mage = undefined;
+    }
   }
 
   async import(event: Event) {
     let result = await this.loader.importBook(event);
-    this.reset();
+    this.reset(true);
     this.builder.parseImport(result);
     this.mage = result[0];
   }
@@ -113,5 +119,4 @@ export class DeckComponent implements OnInit, OnDestroy {
   }
 
   // TODO filter options
-  // TODO back to top
 }

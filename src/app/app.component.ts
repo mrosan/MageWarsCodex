@@ -1,4 +1,10 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  ChangeDetectorRef,
+  HostListener,
+} from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -13,6 +19,7 @@ export class AppComponent implements OnInit, OnDestroy {
   public wideScreen: boolean = false;
   public selectedTab: string | undefined; // TODO enum
   public innerWidth: any;
+  public windowScrolled: boolean = false;
 
   private wsSub: Subscription | undefined;
   private tabSub: Subscription | undefined;
@@ -24,7 +31,14 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {}
 
   navigateTo(tab: string) {
-    this.emitter.emitWideScreen(false);
+    if (
+      !(
+        ['/deck', '/catalog'].includes(this.router.url) &&
+        ['deck', 'catalog'].includes(tab)
+      )
+    ) {
+      this.emitter.emitWideScreen(false);
+    }
     this.router.navigate([tab]);
   }
 
@@ -42,5 +56,33 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.wsSub?.unsubscribe();
     this.tabSub?.unsubscribe();
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop > 100
+    ) {
+      this.windowScrolled = true;
+    } else if (
+      (this.windowScrolled && window.pageYOffset) ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop < 10
+    ) {
+      this.windowScrolled = false;
+    }
+  }
+
+  scrollToTop() {
+    (function smoothscroll() {
+      let currentScroll =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      if (currentScroll > 0) {
+        window.requestAnimationFrame(smoothscroll);
+        window.scrollTo(0, currentScroll - currentScroll / 8);
+      }
+    })();
   }
 }

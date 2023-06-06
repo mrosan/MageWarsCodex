@@ -133,7 +133,5 @@ export class CatalogComponent implements OnInit, OnDestroy {
     });
   }
 
-  // TODO back to top
-  // TODO filter subtypes based on filter
   // TODO add subtypes filter input clear button
 }

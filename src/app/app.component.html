@@ -45,4 +45,11 @@
     </mat-button-toggle-group>
   </div>
   <router-outlet></router-outlet>
+  <div class="footer">
+    <div class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+      <button mat-mini-fab type="button" color="accent" (click)="scrollToTop()">
+        <mat-icon>arrow_upward</mat-icon>
+      </button>
+    </div>
+  </div>
 </div>
