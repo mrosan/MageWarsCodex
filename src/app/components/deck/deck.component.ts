@@ -79,14 +79,19 @@ export class DeckComponent implements OnInit, OnDestroy {
     this.builder.removeCard(card);
   }
 
-  reset() {
-    this.builder.resetBook();
-    this.mage = undefined;
+  reset(skipConfirm: boolean = false) {
+    if (
+      skipConfirm ||
+      confirm('Are you sure you want to clear your spellbook?')
+    ) {
+      this.builder.resetBook();
+      this.mage = undefined;
+    }
   }
 
   async import(event: Event) {
     let result = await this.loader.importBook(event);
-    this.reset();
+    this.reset(true);
     this.builder.parseImport(result);
     this.mage = result[0];
   }
@@ -114,5 +119,4 @@ export class DeckComponent implements OnInit, OnDestroy {
   }
 
   // TODO filter options
-  // TODO back to top
 }

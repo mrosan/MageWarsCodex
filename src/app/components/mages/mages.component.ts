@@ -25,6 +25,7 @@ export class MagesComponent implements OnInit, OnDestroy {
     this.listSub = this.loader.getMages().subscribe((mages) => {
       this.list = mages;
     });
+    this.selectedMage = this.builder.getMage();
     this.emitter.emitTab('mages');
   }
 
@@ -35,7 +36,4 @@ export class MagesComponent implements OnInit, OnDestroy {
   mageSelected(mage: Mage) {
     this.selectedMage = this.builder.selectMage(mage);
   }
-
-  // TODO onInit highlight selected mage
-  // TODO deselecting mage -> deck spellpoints bug
 }

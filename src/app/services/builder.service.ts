@@ -151,6 +151,10 @@ export class BuilderService {
           if (orMultiplier.minSearchNeeded) {
             sum += amount * orMultiplier.orLevel * orMultiplier.minVal;
           }
+        } else {
+          for (let swl of card.schools) {
+            sum += amount * swl.level * 2;
+          }
         }
       }
     });
