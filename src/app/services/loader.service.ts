@@ -99,14 +99,24 @@ export class LoaderService {
     return this.mages;
   }
 
-  getAllSubTypes() {
+  getAllSubTypes(): [string[], Map<string, number>] {
+    let counts: Map<string, number> = new Map();
+    for (let c of this.fullCatalog) {
+      for (let t of c.subTypes) {
+        const count = counts.has(t) ? counts.get(t)! : 0;
+        counts.set(t, +count + 1);
+      }
+    }
     return [
-      ...new Set(
-        this.fullCatalog
-          .map((c) => c.subTypes)
-          .flat()
-          .sort()
-      ),
+      [
+        ...new Set(
+          this.fullCatalog
+            .map((c) => c.subTypes)
+            .flat()
+            .sort()
+        ),
+      ],
+      counts,
     ];
   }
 
