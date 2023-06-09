@@ -13,7 +13,9 @@
           </mat-form-field>
           <mat-form-field
             class="input-small"
-            [ngClass]="{ strict: filterGroup.controls['strict'].value }"
+            [ngClass]="{
+              highlight: filterGroup.controls['commonSubtypes'].value
+            }"
           >
             <mat-label>Spell subtypes</mat-label>
             <mat-select multiple formControlName="subTypes">
@@ -26,14 +28,14 @@
                 *ngFor="let type of filterView.subTypes"
                 [value]="type"
               >
-                {{ type }}
+                <span>{{ type }}</span>
+                <span class="and-others">{{
+                  " (" + allSubTypes[1].get(type) + ")"
+                }}</span>
               </mat-option>
             </mat-select>
           </mat-form-field>
-          <mat-form-field
-            class="input-small"
-            [ngClass]="{ strict: filterGroup.controls['strict'].value }"
-          >
+          <mat-form-field class="input-small">
             <mat-label>Spell schools</mat-label>
             <mat-select multiple formControlName="schools">
               <mat-option
@@ -127,16 +129,20 @@
         </div>
         <div class="selection-group">
           <div class="input cb-input">
-            <mat-label>Only epic cards</mat-label>
+            <mat-label>only epic spells</mat-label>
             <mat-checkbox formControlName="epic"></mat-checkbox>
           </div>
           <div class="input cb-input">
-            <mat-label>Only novice cards</mat-label>
+            <mat-label>only novice spells</mat-label>
             <mat-checkbox formControlName="novice"></mat-checkbox>
           </div>
-          <div class="input cb-input">
+          <!-- <div class="input cb-input">
             <mat-label>Apply strict filter</mat-label>
             <mat-checkbox formControlName="strict"></mat-checkbox>
+          </div> -->
+          <div class="input cb-input">
+            <mat-label>only common subtypes</mat-label>
+            <mat-checkbox formControlName="commonSubtypes"></mat-checkbox>
           </div>
         </div>
       </form>

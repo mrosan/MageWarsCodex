@@ -3454,7 +3454,7 @@
 			}
 		],
 		"image": "35592eff-8121-45e0-9c1f-a52bf24469ae",
-		"slot": ""
+		"slot": "RING"
 	},
 	{
 		"name": "Akiro's Battle Cry",
@@ -4142,7 +4142,7 @@
 			}
 		],
 		"image": "a79b93ae-48d1-4836-b1ce-08124bdb3bf1",
-		"slot": "",
+		"slot": "RING",
 		"only": "Siren",
 		"set": "Paladin vs. Siren"
 	},
@@ -4152,7 +4152,7 @@
 		"subtypes": ["Demon"],
 		"schools": [
 			{
-				"school": "HOLY",
+				"school": "DARK",
 				"level": "2"
 			}
 		],

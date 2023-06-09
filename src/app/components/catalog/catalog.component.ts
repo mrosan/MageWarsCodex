@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import {
   CatalogItem,
@@ -11,7 +11,7 @@ import {
 import { LoaderService } from 'src/app/services/loader.service';
 import { EmitterService } from 'src/app/services/emitter.service';
 import { BuilderService } from 'src/app/services/builder.service';
-import { arenaSets } from 'src/app/data/sets';
+import { FilterService } from 'src/app/services/filter.service';
 
 @Component({
   selector: 'app-catalog',
@@ -23,35 +23,23 @@ export class CatalogComponent implements OnInit, OnDestroy {
   public list$: Observable<CatalogItem[]>;
   public list: CatalogItem[] | undefined;
   private listSub: Subscription | undefined;
+  private fgSub: Subscription | undefined;
 
   public filterView: CatalogFilterForm | undefined;
   public filterGroup: FormGroup;
-  private fgSub: Subscription | undefined;
-  private allSubTypes: string[] | undefined;
+  public allSubTypes: [string[], Map<string, number>] = [[], new Map()];
   public wideScreen: boolean = false;
   public innerWidth: any;
   public selectedCard: CatalogItem | undefined;
 
   constructor(
     private loader: LoaderService,
-    private fb: FormBuilder,
+    private filter: FilterService,
     private emitter: EmitterService,
     private builder: BuilderService
   ) {
     this.list$ = this.loader.getCatalog();
-    this.filterGroup = this.fb.group({
-      name: [''],
-      types: [[]],
-      subTypes: [[]],
-      schools: [[]],
-      levels: [[]],
-      novice: [false],
-      only: [''],
-      slots: [[]],
-      strict: [false],
-      sets: [arenaSets],
-      epic: [false],
-    }); // TODO type
+    this.filterGroup = this.filter.getFormGroup();
   }
 
   ngOnInit(): void {
@@ -64,7 +52,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
         this.allSubTypes = this.loader.getAllSubTypes();
         this.filterView = {
           types: Object.values(SpellType),
-          subTypes: this.allSubTypes,
+          subTypes: this.allSubTypes[0],
           schools: Object.values(School),
           slots: Object.values(EquipmentSlot),
           levels: [1, 2, 3, 4, 5, 6, 7, 8],
@@ -76,6 +64,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
     });
     this.fgSub = this.filterGroup.valueChanges.subscribe((val) => {
       this.#checkEquipmentSelectForm();
+      this.#checkSubtypesSelectForm();
       this.loader.filterCatalog(val);
     });
     this.emitter.emitTab('catalog');
@@ -91,7 +80,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
     event.stopPropagation();
     let val = (<HTMLTextAreaElement>event.target).value;
     if (this.filterView)
-      this.filterView.subTypes = this.allSubTypes!.filter((st) =>
+      this.filterView.subTypes = this.allSubTypes[0].filter((st) =>
         st.toLowerCase().startsWith(val.toLowerCase())
       );
   }
@@ -124,6 +113,19 @@ export class CatalogComponent implements OnInit, OnDestroy {
     }
   }
 
+  #checkSubtypesSelectForm() {
+    if (!this.filterView) return;
+    if (this.filterGroup.controls['commonSubtypes'].value) {
+      const limit = 5;
+      this.filterView.subTypes = this.allSubTypes[0].filter((type) => {
+        if (!this.allSubTypes[1].get(type)) return true;
+        return this.allSubTypes[1].get(type)! > limit;
+      });
+    } else {
+      this.filterView.subTypes = this.allSubTypes[0];
+    }
+  }
+
   #setSets() {
     const almostAllSets = this.loader
       .getAllSets()
@@ -134,4 +136,5 @@ export class CatalogComponent implements OnInit, OnDestroy {
   }
 
   // TODO add subtypes filter input clear button
+  // TODO delegate some of the operations here to FilterService
 }
