@@ -142,6 +142,18 @@ export class LoaderService {
     ];
   }
 
+  getAllTraits(): string[] {
+    return [
+      ...new Set(
+        this.fullCatalog
+          .map((c) => c.traits)
+          .flat()
+          .filter((c) => c)
+          .sort()
+      ),
+    ];
+  }
+
   filterList(searchFilter: string, categoryFilter: CodexItemCategory[]) {
     let filteredList = this.fullList;
     if (categoryFilter.length > 0) {
@@ -154,7 +166,7 @@ export class LoaderService {
   }
 
   // TODO any
-  filterCatalog(filter: any) {
+  filterCatalog(filter: any, selectedMage?: Mage) {
     let filteredList = this.fullCatalog;
     if (filter.name) {
       filteredList = this.#filterName(filteredList, filter.name);
@@ -216,6 +228,14 @@ export class LoaderService {
       }
       if (valid && filter.sets?.length) {
         valid = valid && filter.sets.includes(item.set);
+      }
+      if (valid && filter.traits?.length) {
+        valid =
+          valid &&
+          filter.traits.filter((s: any) => item.traits?.includes(s)).length > 0;
+      }
+      if (valid && selectedMage && filter.compatibles && item.only) {
+        valid = valid && selectedMage.only.includes(item.only);
       }
       return valid;
     });
@@ -324,6 +344,7 @@ export class LoaderService {
         : undefined,
       set: item?.set ? item.set : 'Arena Core Set',
       sumLevel: sumLvl,
+      traits: item.traits ? item.traits : [],
     };
   }
 
@@ -374,3 +395,5 @@ export class LoaderService {
     }
   }
 }
+
+// TODO move filter logic to FilterService
