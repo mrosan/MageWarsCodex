@@ -58,14 +58,18 @@ export class CatalogComponent implements OnInit, OnDestroy {
           levels: [1, 2, 3, 4, 5, 6, 7, 8],
           onlies: this.loader.getAllOnly(),
           sets: this.loader.getAllSets(),
+          traits: this.loader.getAllTraits(),
         };
-        this.loader.filterCatalog(this.filterGroup.value);
+        this.loader.filterCatalog(
+          this.filterGroup.value,
+          this.builder.getMage()
+        );
       }
     });
     this.fgSub = this.filterGroup.valueChanges.subscribe((val) => {
       this.#checkEquipmentSelectForm();
       this.#checkSubtypesSelectForm();
-      this.loader.filterCatalog(val);
+      this.loader.filterCatalog(val, this.builder.getMage());
     });
     this.emitter.emitTab('catalog');
     this.innerWidth = window.innerWidth;
@@ -92,7 +96,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
 
   resetForm() {
     this.filterGroup.reset();
-    this.loader.filterCatalog(this.filterGroup.value);
+    this.loader.filterCatalog(this.filterGroup.value, this.builder.getMage());
     this.#setSets();
   }
 

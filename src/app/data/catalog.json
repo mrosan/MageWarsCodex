@@ -36,7 +36,8 @@
 				"level": "3"
 			}
 		],
-		"image": "0bd874fa-f08f-41bd-8857-4a99ecb8ae5b"
+		"image": "0bd874fa-f08f-41bd-8857-4a99ecb8ae5b",
+		"traits": ["Charge", "Fast", "Flying"]
 	},
 	{
 		"name": "Combustion",
@@ -88,7 +89,8 @@
 			}
 		],
 		"image": "0cea5239-b6a1-4826-a636-2fc213b5efcf",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Zone Exclusive", "Flame"]
 	},
 	{
 		"name": "Animal Kinship",
@@ -101,7 +103,8 @@
 			}
 		],
 		"image": "0d5dd26c-5ff4-4678-8ad4-8bcdf4107085",
-		"only": "Beastmaster"
+		"only": "Beastmaster",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Skeletal Sentry",
@@ -113,7 +116,8 @@
 				"level": "2"
 			}
 		],
-		"image": "0d9b07c9-5d2b-45fa-9e69-6f371293f883"
+		"image": "0d9b07c9-5d2b-45fa-9e69-6f371293f883",
+		"traits": ["Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Etherian Lifetree",
@@ -126,7 +130,8 @@
 			}
 		],
 		"image": "0dfe805d-f194-437d-84bd-7a8da15aa95e",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Zone Exclusive", "Regenerate", "Unique", "Flame", "Hydro Immunity", "Living"]
 	},
 	{
 		"name": "Temple of Light",
@@ -139,7 +144,8 @@
 			}
 		],
 		"image": "0e4eed2a-34a6-4b4f-9fb2-23aabb2e958c.2",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive", "Unique"]
 	},
 	{
 		"name": "Cassiel, Shield of Bim-Shalla",
@@ -153,7 +159,8 @@
 		],
 		"image": "0eaf67cf-6b23-4e9c-906b-383fd6bd1e07",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Aegis", "Familiar", "Flying", "Legendary", "Channeling"]
 	},
 	{
 		"name": "Disarm",
@@ -202,7 +209,8 @@
 		"slot": "",
 		"only": "Dark Mage",
 		"set": "Druid vs. Necromancer",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Darkfenne Hydra",
@@ -215,7 +223,8 @@
 			}
 		],
 		"image": "1b6c4df2-706b-440e-9f55-c6d3c0df93a7",
-		"slot": ""
+		"slot": "",
+		"traits": ["Regenerate", "Slow"]
 	},
 	{
 		"name": "Raptor Vine",
@@ -229,7 +238,8 @@
 		],
 		"image": "1c7345af-d370-446b-8d71-ebb1e90b0db9",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Rooted", "Uproot", "Regenerate", "Hydro Immunity", "Flame"]
 	},
 	{
 		"name": "Goblin Builder",
@@ -243,7 +253,8 @@
 		],
 		"image": "1cc87a8e-f6bb-44e9-be15-f12a31f9ea3a",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Pest", "Familiar"]
 	},
 	{
 		"name": "Bolt of V'Tar",
@@ -271,7 +282,8 @@
 		],
 		"image": "61dd52be-2c3b-420c-937a-dd1bdf44dd80",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Extendable", "Lightning"]
 	},
 	{
 		"name": "Wall of Force",
@@ -285,7 +297,8 @@
 		],
 		"image": "82ce9e6d-a218-488a-843c-46b85f3f393d",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Extendable", "Incorporeal"]
 	},
 	{
 		"name": "Coral Barrier",
@@ -299,7 +312,8 @@
 		],
 		"image": "98f6f10c-267d-451d-bb11-7d149c8d0f9c",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Extendable", "Living"]
 	},
 	{
 		"name": "Force Golem",
@@ -314,7 +328,8 @@
 		"image": "1d4d0993-60da-4b56-a7e1-6a1dbc52bc9c",
 		"slot": "",
 		"only": "Forcemaster",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Aegis", "Nonliving", "Dissipate"]
 	},
 	{
 		"name": "Radiant Breastplate",
@@ -343,7 +358,8 @@
 		],
 		"image": "1db6906f-12ec-4538-8d1e-534a7beb81d4",
 		"slot": "AUTONOMOUS",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Upkeep", "Autonomous"]
 	},
 	{
 		"name": "Cervere, The Forest Shadow",
@@ -356,7 +372,8 @@
 			}
 		],
 		"image": "1df603fc-3d5d-4a40-9942-640bca00e396",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary", "Fast", "Elusive"]
 	},
 	{
 		"name": "Circle of Fire",
@@ -370,7 +387,8 @@
 		],
 		"image": "1ed8a709-4e3b-407f-bb43-426c3a8c06d9",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Mind Control",
@@ -385,7 +403,8 @@
 		"image": "1ee1f235-0acc-4752-b304-c7877e0c1f94",
 		"slot": "",
 		"only": "Mind Mage",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Upkeep"]
 	},
 	{
 		"name": "Jeweled Scarab",
@@ -417,7 +436,8 @@
 		],
 		"image": "1f8f30b7-8d0c-4350-ae4f-0616df0abc88",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Flying"]
 	},
 	{
 		"name": "Blood Demon",
@@ -431,7 +451,8 @@
 		],
 		"image": "2bb70070-7b6e-4bdf-b75a-e739810ff3ac",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Bloodthirsty", "Flying"]
 	},
 	{
 		"name": "Marked for Death",
@@ -444,7 +465,8 @@
 			}
 		],
 		"image": "2d94d69e-5c08-4db2-89a0-5c811bfaca17",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Swamp",
@@ -489,7 +511,8 @@
 			}
 		],
 		"image": "03d52691-75b2-42ec-a81c-ca2074f28002",
-		"slot": ""
+		"slot": "",
+		"traits": ["Regenerate", "Slow"]
 	},
 	{
 		"name": "Quicksand",
@@ -503,7 +526,8 @@
 		],
 		"image": "3a8f2eb2-df0d-4108-a8f1-499c05fb0d35",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Indestructible"]
 	},
 	{
 		"name": "Steelclaw Grizzly",
@@ -516,7 +540,8 @@
 			}
 		],
 		"image": "3a55bfaa-a96e-43fc-9a66-f8aff21701d5",
-		"slot": ""
+		"slot": "",
+		"traits": ["Frost"]
 	},
 	{
 		"name": "Goblin Grunt",
@@ -544,7 +569,8 @@
 		],
 		"image": "3da53bb4-fef7-421e-b6c8-99df185f2914",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Aegis"]
 	},
 	{
 		"name": "Libro Mortuos",
@@ -560,7 +586,8 @@
 		"slot": "MAIN_OR_OFFHAND",
 		"only": "Necromancer",
 		"set": "Druid vs. Necromancer",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Spawnpoint"]
 	},
 	{
 		"name": "Dawn's Bastion",
@@ -636,7 +663,8 @@
 		],
 		"image": "4b0e7bf5-e433-4f9d-b161-593b8aa07ddb",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Naiya",
@@ -651,7 +679,8 @@
 		"image": "4c6d7c69-13c4-4dfe-9452-0d75ab2347f4",
 		"slot": "",
 		"only": "Siren",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Familiar", "Channeling"]
 	},
 	{
 		"name": "Hurl Meteorite",
@@ -705,7 +734,8 @@
 			}
 		],
 		"image": "4ed5ed50-3c2a-4513-ae98-c954766e5a79",
-		"slot": ""
+		"slot": "",
+		"traits": ["Flame Immunity"]
 	},
 	{
 		"name": "Earthquake",
@@ -746,7 +776,8 @@
 		],
 		"image": "4fc86a1f-d24d-4da7-9f85-5818df967abd",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Upkeep", "Incorporeal", "Nonliving"]
 	},
 	{
 		"name": "Leather Boots",
@@ -838,7 +869,8 @@
 		"image": "5ddf5771-870a-435d-a169-19604b8f5706",
 		"slot": "",
 		"only": "Siren",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Cantrip"]
 	},
 	{
 		"name": "Harshforge Monolith",
@@ -857,7 +889,8 @@
 		"image": "5eca0e21-79c9-495b-b6ee-29f0a54ea894",
 		"slot": "",
 		"set": "Forged in Fire",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Burnproof", "Legendary"]
 	},
 	{
 		"name": "Storm Drake Hide",
@@ -885,7 +918,8 @@
 		],
 		"image": "5f5be863-dbbe-4eb7-93c2-b933cc5eab89",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Fast", "Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Sectarus, Dark Rune Sword",
@@ -900,7 +934,8 @@
 		"image": "5f559e56-4454-41ef-a13d-bca2fa78559c",
 		"slot": "MAINHAND",
 		"only": "Dark Mage",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Familiar", "Legendary"]
 	},
 	{
 		"name": "Force Caracal",
@@ -915,7 +950,8 @@
 		"image": "5f798d36-1d1d-4e14-a79e-3ad41dd95141",
 		"slot": "",
 		"only": "Forcemaster",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Aegis", "Nonliving", "Dissipate"]
 	},
 	{
 		"name": "Reverse Magic",
@@ -959,7 +995,8 @@
 			}
 		],
 		"image": "5fe1c35e-e146-456c-bf66-73aefd29bb7f",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary", "Flying", "Flame Immunity"]
 	},
 	{
 		"name": "Ignite",
@@ -988,7 +1025,8 @@
 		"image": "6a65ca7e-df13-4c27-90cb-44d4c86b2610",
 		"slot": "",
 		"only":"Warlock",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Incorporeal", "Channeling"]
 	},
 	{
 		"name": "Flank Attack",
@@ -1018,7 +1056,8 @@
 		"slot": "",
 		"only": "Paladin",
 		"set": "Paladin vs. Siren",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Magecast"]
 	},
 	{
 		"name": "Spitting Raptor",
@@ -1064,7 +1103,8 @@
 			}
 		],
 		"image": "6c1dde62-0d1d-429a-ae53-af492e964f8d",
-		"slot": ""
+		"slot": "",
+		"traits": ["Upkeep"]
 	},
 	{
 		"name": "Echo of the Depths",
@@ -1080,7 +1120,8 @@
 		"slot": "MAIN_OR_OFFHAND",
 		"only": "Siren",
 		"set": "Paladin vs. Siren",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Spawnpoint"]
 	},
 	{
 		"name": "V'Tarrian Energy Wave",
@@ -1141,7 +1182,8 @@
 		],
 		"image": "6ea8364e-2843-4649-af14-44ebedeeb41e",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Vinewhip Staff",
@@ -1197,7 +1239,8 @@
 		],
 		"image": "7add1431-cfce-4c3e-b7bc-88cf0c126e9a",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Frost", "Bloodthirsty"]
 	},
 	{
 		"name": "Cheetah Speed",
@@ -1238,7 +1281,8 @@
 		"image": "7bc8847c-fee8-484f-a7f5-9f649e958087",
 		"slot": "",
 		"only": "Dark Mage",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Magecast"]
 	},
 	{
 		"name": "Burst of Thorns",
@@ -1283,7 +1327,8 @@
 		"image": "7d30fdf8-a1d1-47cd-9c58-2eda8621055b",
 		"slot": "",
 		"only": "Holy Mage",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Magecast", "Unique"]
 	},
 	{
 		"name": "Battle Forge",
@@ -1300,7 +1345,8 @@
 			}
 		],
 		"image": "7e359ecb-7ce3-46f0-a516-de5a5f589733",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive", "Flame Immunity", "Spawnpoint", "Hydro", "Channeling"]
 	},
 	{
 		"name": "Force Orb",
@@ -1313,7 +1359,8 @@
 			}
 		],
 		"image": "7fe6a6b2-4403-4a07-8048-4692d954898a",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Colossus Belt",
@@ -1354,7 +1401,8 @@
 			}
 		],
 		"image": "8bd0df13-3dc5-4ff1-888e-e36beb073902",
-		"slot": ""
+		"slot": "",
+		"traits": ["Flying"]
 	},
 	{
 		"name": "Hawkeye",
@@ -1382,7 +1430,8 @@
 		"image": "8c26f3e9-2124-4fc0-b752-a68ad740b088",
 		"slot": "",
 		"only": "Warlock",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Legendary", "Familiar", "Flame", "Channeling"]
 	},
 	{
 		"name": "Geyser",
@@ -1409,7 +1458,8 @@
 		],
 		"image": "8cc57f35-4ba7-45dc-b52b-326790f804d2.B",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Zone Exclusive", "Flame"]
 	},
 	{
 		"name": "Renewing Rain",
@@ -1460,7 +1510,8 @@
 		"image": "8d28ba55-a8ea-43e6-8df4-8becc8cb088f",
 		"slot": "",
 		"only": "Druid",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Legendary", "Flying", "Pest", "Channeling"]
 	},
 	{
 		"name": "Bear Strength",
@@ -1487,7 +1538,8 @@
 		],
 		"image": "09e11b3e-3129-4a87-8f8e-b3c18045389a",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Acolyte of the Bog Queen",
@@ -1515,7 +1567,8 @@
 		],
 		"image": "9b486167-9d34-424d-85c2-014d8772730a",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Zone Exclusive", "Legendary"]
 	},
 	{
 		"name": "Sacrificial Altar",
@@ -1529,7 +1582,8 @@
 		],
 		"image": "9dfe00eb-4795-4583-b272-b7b31ddb0f7c",
 		"slot": "",
-		"only": "Dark Mage"
+		"only": "Dark Mage",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Adramelech's Torment",
@@ -1544,7 +1598,8 @@
 		"image": "9e7cbef4-1ad9-46cf-95c0-1aafd656c85d",
 		"slot": "AMULET",
 		"only": "Warlock",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Mana Crystal",
@@ -1557,7 +1612,8 @@
 			}
 		],
 		"image": "9efdd1ac-d30c-4773-9ccd-f916470f4861",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive", "Flame Immunity", "Channeling gain"]
 	},
 	{
 		"name": "Sir Corazin, Blademaster",
@@ -1571,7 +1627,8 @@
 		],
 		"image": "9f958d17-2f53-40b2-9b1a-5fa6c9b7d1e1",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Magebane",
@@ -1611,7 +1668,8 @@
 		],
 		"image": "10e5eda8-f2b6-459f-9309-172251215aa9",
 		"slot": "RING",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Regenerate", "Living", "Legendary", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Seedling Pod",
@@ -1626,7 +1684,8 @@
 		"image": "11a15edf-2a69-4507-9449-f57badafcfe4",
 		"slot": "",
 		"only": "Druid",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Spawnpoint", "Regenerate", "Living", "Flame", "Hydro Immunity", "Channeling"]
 	},
 	{
 		"name": "Dissolve",
@@ -1679,7 +1738,8 @@
 			}
 		],
 		"image": "12f32a67-eb37-4311-ab57-addb40573990",
-		"slot": ""
+		"slot": "",
+		"traits": ["Lightning"]
 	},
 	{
 		"name": "Cerberus",
@@ -1693,7 +1753,8 @@
 		],
 		"image": "14b02bf9-1492-44c8-9a51-f8ef280dd08b",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Legendary", "Flame", "Tough"]
 	},
 	{
 		"name": "Sniper Shot",
@@ -1734,7 +1795,8 @@
 		],
 		"image": "20ee0189-9f93-4000-93f0-b236bbc20c67",
 		"slot": "",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Legendary"]
 	},
 	{
 		"name": "Group Heal",
@@ -1776,7 +1838,8 @@
 		"slot": "",
 		"only": "Warlord",
 		"set": "Forcemaster vs. Warlord",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Flame", "Spawnpoint", "Channeling"]
 	},
 	{
 		"name": "Hellfire Trap",
@@ -1845,7 +1908,8 @@
 		"image": "27dacd66-4f54-465e-a728-10358b0c7548",
 		"slot": "",
 		"set": "Battlegrounds Domination",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Legendary"]
 	},
 	{
 		"name": "Stonegaze Basilisk",
@@ -1858,7 +1922,8 @@
 			}
 		],
 		"image": "031d394a-fafc-4e88-b1c9-1152b223b278",
-		"slot": ""
+		"slot": "",
+		"traits": ["Slow"]
 	},
 	{
 		"name": "Altar of Skulls",
@@ -1874,7 +1939,8 @@
 		"slot": "",
 		"only": "Necromancer",
 		"set": "Druid vs. Necromancer",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Stranglevine",
@@ -1888,7 +1954,8 @@
 		],
 		"image": "32a5f867-3654-41b3-9917-74b5983eedd2",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Upkeep", "Living", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Samandriel, Angel of Light",
@@ -1901,7 +1968,8 @@
 			}
 		],
 		"image": "33e41d11-c799-4fb0-a25d-dcb5758bc0f0",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary", "Aegis", "Flying", "Light Immunity"]
 	},
 	{
 		"name": "Steal Equipment",
@@ -1914,7 +1982,8 @@
 			}
 		],
 		"image": "36fc7953-da2b-4fb2-9708-d163ecc6853b",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magecast"]
 	},
 	{
 		"name": "Arc Lightning",
@@ -1955,7 +2024,8 @@
 		],
 		"image": "40a892b7-ef42-4242-8e2f-68dfaa75b98b",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Shaggoth-Zora",
@@ -1969,7 +2039,8 @@
 		],
 		"image": "42e4bd62-7a26-4d7a-9b19-21e4c26fc0dd",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Legendary", "Bloodthirsty", "Lumbering", "Resilient", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Fireshaper Ring",
@@ -1997,7 +2068,8 @@
 		"image": "43e7ffb8-e629-4629-b8ce-cb6ea5e4b268",
 		"slot": "MAIN_OR_OFFHAND",
 		"only": "Warlord",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Ring of Tides",
@@ -2040,7 +2112,8 @@
 		],
 		"image": "46b36e31-5dec-4a37-a39c-c2a5b6e0caee",
 		"slot": "",
-		"only": "Dark Mage"
+		"only": "Dark Mage",
+		"traits": ["Magecast", "Unique"]
 	},
 	{
 		"name": "Asyran Defender",
@@ -2069,7 +2142,8 @@
 		"image": "47f96e37-5008-43d1-a7c7-6ff3bd841bd3",
 		"slot": "",
 		"only": "Mind Mage",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Upkeep", "Magecast"]
 	},
 	{
 		"name": "Malacoda",
@@ -2082,7 +2156,8 @@
 			}
 		],
 		"image": "52b0f102-59d5-415c-9e5b-3d2192613155",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary", "Slow", "Poison Immunity"]
 	},
 	{
 		"name": "V'Torrak Gate",
@@ -2096,7 +2171,8 @@
 		],
 		"image": "54e67290-5e6a-4d8a-8bf0-bbb8fddf7ddd",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Incorporeal"]
 	},
 	{
 		"name": "Moonglow Faerie",
@@ -2109,7 +2185,8 @@
 			}
 		],
 		"image": "057affb5-b19a-4de0-b75a-abc5451897df",
-		"slot": ""
+		"slot": "",
+		"traits": ["Flying", "Pest"]
 	},
 	{
 		"name": "Divine Protection",
@@ -2122,7 +2199,8 @@
 			}
 		],
 		"image": "58b52bf5-816a-4342-b1b8-a37f16daa49f",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Drain Power",
@@ -2135,7 +2213,8 @@
 			}
 		],
 		"image": "59b650aa-2e7c-42bb-b7b5-4c7a938b2b4b",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magecast"]
 	},
 	{
 		"name": "Purify",
@@ -2194,7 +2273,8 @@
 		],
 		"image": "62a0b1ac-91d1-4dc5-9bcc-eb4209261388",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Incorporeal", "Flying", "Hydro Immunity"]
 	},
 	{
 		"name": "Blue Gremlin",
@@ -2207,7 +2287,8 @@
 			}
 		],
 		"image": "64ac6979-be87-4a71-b840-c60fade56a13",
-		"slot": ""
+		"slot": "",
+		"traits": ["Pest"]
 	},
 	{
 		"name": "Whirling Strike",
@@ -2235,7 +2316,8 @@
 		],
 		"image": "065fff7f-3189-4965-ab62-0e8f95db1e0c",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Death Ring",
@@ -2265,7 +2347,8 @@
 		"image": "71e32301-4724-497d-9224-9f052fcf9808",
 		"slot": "",
 		"set": "Battlegrounds Domination",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Standard Bearer",
@@ -2280,7 +2363,8 @@
 		"image": "76b82cdc-fb4d-46e9-a4de-9fdac5ff41fc",
 		"slot": "",
 		"only": "Warlord",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Cantrip", "Unique"]
 	},
 	{
 		"name": "Brogan Bloodstone",
@@ -2293,7 +2377,8 @@
 			}
 		],
 		"image": "76d2e8e3-6414-488c-b866-20d91f6320db",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary", "Lightning"]
 	},
 	{
 		"name": "Regrowth",
@@ -2306,7 +2391,8 @@
 			}
 		],
 		"image": "76d440be-b82c-4a12-97ef-c2bad86fdc1a",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Force Sword",
@@ -2319,7 +2405,8 @@
 			}
 		],
 		"image": "77b5e9a1-9824-40a5-95e9-2f669a01a5c8",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Force Armor",
@@ -2348,7 +2435,8 @@
 		],
 		"image": "80dca5bb-9162-4876-833b-a80687e0589b",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Upkeep"]
 	},
 	{
 		"name": "Nullify",
@@ -2379,7 +2467,8 @@
 		],
 		"image": "81f50147-da6b-4ad3-8e41-7ea49d6d7d4f",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Morning Star",
@@ -2407,7 +2496,8 @@
 		],
 		"image": "83f70996-9bc9-4290-8f78-6cb6f5e69b71",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Aegis", "Regenerate"]
 	},
 	{
 		"name": "Deathshroud Staff",
@@ -2449,7 +2539,8 @@
 			}
 		],
 		"image": "86d43008-5faf-4eaf-a66a-cdd985f45d5f",
-		"slot": "MAIN_OR_OFFHAND"
+		"slot": "MAIN_OR_OFFHAND",
+		"traits": ["Spellbind"]
 	},
 	{
 		"name": "Ivarium Longbow",
@@ -2475,7 +2566,8 @@
 			}
 		],
 		"image": "87cb82db-2f99-4227-8447-72cffba636dc",
-		"slot": ""
+		"slot": "",
+		"traits": ["Fast"]
 	},
 	{
 		"name": "Thorg, Chief Bodyguard",
@@ -2490,7 +2582,8 @@
 		"image": "88ee2f45-5730-4d7a-ae12-f7112a3522ac",
 		"slot": "",
 		"only": "Warlord",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Legendary", "Lightning"]
 	},
 	{
 		"name": "Explode",
@@ -2530,7 +2623,8 @@
 		],
 		"image": "96c21a43-e794-4f23-9408-5c7f2523a4f6",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Bloodthirsty", "Slow", "Resilient", "Pest", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Bridge Troll",
@@ -2548,7 +2642,8 @@
 		],
 		"image": "97a1bcd1-5702-4ad6-87f9-7977901b4d02",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Regenerate", "Flame"]
 	},
 	{
 		"name": "Armor Ward",
@@ -2594,7 +2689,8 @@
 			}
 		],
 		"image": "177abb85-6437-4e91-8ebb-7df1c9103c06",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Eye of Itadjet",
@@ -2608,7 +2704,8 @@
 		],
 		"image": "252db70f-53d3-4c92-82f3-8f0832c73169",
 		"slot": "",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Pest"]
 	},
 	{
 		"name": "Cloak of Shadows",
@@ -2650,7 +2747,8 @@
 		],
 		"image": "310c13cd-b845-46c2-9ad7-94eda4626f1d",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Blind",
@@ -2664,7 +2762,8 @@
 		],
 		"image": "327c59fe-1cab-4f4e-8145-31db7d3b8989",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Mohktari, Great Tree of Life",
@@ -2691,7 +2790,8 @@
 		],
 		"image": "359d8b05-3a2d-4ce6-8f51-b9744ede41ee",
 		"slot": "",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Siphon Energy",
@@ -2734,7 +2834,8 @@
 		"image": "445e4660-ce91-45c2-9bf2-d17669eb5053",
 		"slot": "",
 		"only": "Forcemaster",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Aegis", "Nonliving", "Dissipate"]
 	},
 	{
 		"name": "Elemental Wand",
@@ -2759,7 +2860,8 @@
 			}
 		],
 		"image": "469d4201-ec88-4f13-a8dc-f11b48e3df4b",
-		"slot": "MAIN_OR_OFFHAND"
+		"slot": "MAIN_OR_OFFHAND",
+		"traits": ["Spellbind"]
 	},
 	{
 		"name": "Ravenous Ghoul",
@@ -2773,7 +2875,8 @@
 		],
 		"image": "499cdd49-3a70-433b-8ecf-a43f1906b845",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Fast", "Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Goran, Werewolf Pet",
@@ -2787,7 +2890,8 @@
 		],
 		"image": "536cee06-aa95-4efc-a484-e4d19a3f2222",
 		"slot": "",
-		"only": "Warlock"
+		"only": "Warlock",
+		"traits": ["Legendary", "Bloodthirsty"]
 	},
 	{
 		"name": "Circle of Lightning",
@@ -2800,7 +2904,8 @@
 			}
 		],
 		"image": "0574a699-e012-4b4e-9c68-1b5f02f05c8a",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Force Hammer",
@@ -2829,7 +2934,8 @@
 		"image": "608fd102-04f4-4d11-b4a8-5108e91fa871",
 		"slot": "",
 		"only": "Holy Mage",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Aegis", "Flying", "Melee", "Regenerate"]
 	},
 	{
 		"name": "Psylok",
@@ -2843,7 +2949,8 @@
 		],
 		"image": "652b2fa3-b4d7-41e2-b819-745c7750b638",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Flying", "Pest"]
 	},
 	{
 		"name": "Ghoul Rot",
@@ -2856,7 +2963,8 @@
 			}
 		],
 		"image": "660cd33f-8812-48bb-a513-2ada886a0320",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Devil's Trident",
@@ -2900,7 +3008,8 @@
 			}
 		],
 		"image": "746e5dba-4689-4ae5-831e-a844131c4824",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Chains of Agony",
@@ -2926,7 +3035,8 @@
 			}
 		],
 		"image": "782de4d1-61aa-4efa-baf1-99df5688704e",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive", "Regenerate", "Living", "Flame", "Hydro Immunity", "Channeling gain"]
 	},
 	{
 		"name": "Hand of Bim-Shalla",
@@ -2939,7 +3049,8 @@
 			}
 		],
 		"image": "804e971e-0b45-4198-bf12-ff71c7d43b05.2",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive", "Unique"]
 	},
 	{
 		"name": "Guard Dog",
@@ -2968,7 +3079,8 @@
 		"image": "837ef959-dab8-42b1-9bb9-4678efe2ad47",
 		"slot": "",
 		"set": "Paladin vs. Siren",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Defense Ring",
@@ -2996,7 +3108,8 @@
 		],
 		"image": "860a3d47-949a-4205-aa3b-05a746d0ec6b",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Legendary", "Psychic Immunity", "Unstoppable", "Nonliving"]
 	},
 	{
 		"name": "Poison Gas Cloud",
@@ -3009,7 +3122,8 @@
 			}
 		],
 		"image": "884ef60a-b2a2-4dc3-89a2-6134541724f3",
-		"slot": ""
+		"slot": "",
+		"traits": ["Incorporeal", "Wind"]
 	},
 	{
 		"name": "Fumble",
@@ -3123,7 +3237,8 @@
 		],
 		"image": "2327f50e-53df-43d0-9d07-0b01d9c3bcb2",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Tanglevine",
@@ -3136,7 +3251,8 @@
 			}
 		],
 		"image": "2380dfaa-3339-4fd9-b927-91aa7a30019d.2",
-		"slot": ""
+		"slot": "",
+		"traits": ["Living", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Wall of Bones",
@@ -3150,7 +3266,8 @@
 		],
 		"image": "2518e7c2-bb94-4061-b2fc-f0435ef7e861",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Extendable"]
 	},
 	{
 		"name": "Deptonne Bloodshaman",
@@ -3207,7 +3324,8 @@
 			}
 		],
 		"image": "4223e20b-75b1-4f21-938e-a4a8acf06195",
-		"slot": ""
+		"slot": "",
+		"traits": ["Extendable", "Incorporeal", "Flame Immunity", "Hydro"]
 	},
 	{
 		"name": "Staff of Arcanum",
@@ -3248,7 +3366,8 @@
 		],
 		"image": "5065ae95-c3be-494f-ba68-afedb3b8c2d9",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Rooted", "Regenerate", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Leviathan Scale Armor",
@@ -3275,7 +3394,8 @@
 			}
 		],
 		"image": "6444b6f4-ae19-45b7-8855-a1dd96ba6bab",
-		"slot": ""
+		"slot": "",
+		"traits": ["Extendable", "Regenerate", "Living", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Construction Yard",
@@ -3290,7 +3410,8 @@
 		"image": "6520a411-1553-4b09-baf1-d814ba92ad28",
 		"slot": "",
 		"set": "Forged in Fire",
-		"epic":"true"
+		"epic":"true",
+		"traits": ["Zone Exclusive", "Channeling"]
 	},
 	{
 		"name": "Ring of Beasts",
@@ -3332,7 +3453,8 @@
 		],
 		"image": "08222fa4-57c4-4ebd-a27a-66f7942e46cb",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Nonliving", "Psychic Immunity", "Climbing"]
 	},
 	{
 		"name": "Perfect Strike",
@@ -3360,7 +3482,8 @@
 		],
 		"image": "9153fc63-f781-443a-ab94-10c5acb50faa",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Lightning Bolt",
@@ -3413,7 +3536,8 @@
 		],
 		"image": "13788dfb-6de8-4a9a-b00b-7c8f68ab7ca7",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Lightning"]
 	},
 	{
 		"name": "Mordok's Obelisk",
@@ -3427,7 +3551,8 @@
 		],
 		"image": "26208d5a-4b15-41ee-880c-2dcf896ac45c",
 		"slot": "",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Legendary"]
 	},
 	{
 		"name": "Sosruko, Ferret Companion",
@@ -3441,7 +3566,8 @@
 		],
 		"image": "28828fac-23f8-4b66-bde0-38d4a4931862",
 		"slot": "",
-		"only": "Beastmaster"
+		"only": "Beastmaster",
+		"traits": ["Legendary", "Elusive", "Pest"]
 	},
 	{
 		"name": "Dawnbreaker Ring",
@@ -3485,7 +3611,8 @@
 		"image": "42464e26-8982-4244-b06e-2aab60f88203",
 		"slot": "",
 		"only": "Warlock",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Legendary", "Flame"]
 	},
 	{
 		"name": "Poisoned Blood",
@@ -3516,7 +3643,8 @@
 		],
 		"image": "57793fab-de11-4206-959c-882f34e2d4f9",
 		"slot": "",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Dragonscale Hauberk",
@@ -3626,7 +3754,8 @@
 		"image": "91719f32-c6c3-40e6-ad21-44d195ab8dd6",
 		"slot": "",
 		"only": "Forcemaster",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Invisible", "Nonliving", "Dissipate"]
 	},
 	{
 		"name": "Temple of Asyra",
@@ -3641,7 +3770,8 @@
 		"image": "93627f10-0699-4aa9-a18a-3fe06fd1b7b1",
 		"slot": "",
 		"only": "Holy Mage",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Channeling"]
 	},
 	{
 		"name": "Minor Heal",
@@ -3669,7 +3799,8 @@
 		],
 		"image": "352583ca-7fed-481b-9b8a-456b05e61501",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Legendary", "Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Shifratar",
@@ -3711,7 +3842,8 @@
 		],
 		"image": "600817a2-1dc1-4ac8-bb73-838afbb8b929",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Flying", "Intercept"]
 	},
 	{
 		"name": "Slaknir, Goblin Chieftain",
@@ -3725,7 +3857,8 @@
 		],
 		"image": "721428d1-878a-457b-8885-4e5f9bb2e20c",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Blinding Flash",
@@ -3756,7 +3889,8 @@
 		],
 		"image": "865954e9-4c67-4858-b3e0-484c66e19db9",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Psychic Immunity", "Unmovable", "Anchored"]
 	},
 	{
 		"name": "Swell",
@@ -3810,7 +3944,8 @@
 			}
 		],
 		"image": "4519600d-8012-4b90-b05c-bcf36ca62469",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary", "Aegis", "Flying", "Lightning"]
 	},
 	{
 		"name": "Usslak, Greater Orb Guardian",
@@ -3828,7 +3963,8 @@
 		],
 		"image": "5688957a-e243-4999-8301-b869be3f6fdb",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Psychic Immunity", "Unmovable", "Anchored"]
 	},
 	{
 		"name": "Tarok, the Skyhunter",
@@ -3841,7 +3977,8 @@
 			}
 		],
 		"image": "5745219f-22d6-4027-8006-e71e9557b3ff",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary", "Flying"]
 	},
 	{
 		"name": "Dwarf Panzerdarde",
@@ -3855,7 +3992,8 @@
 		],
 		"image": "6122329b-8107-4d1a-a322-52311bd11a60",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Lightning", "Intercept"]
 	},
 	{
 		"name": "War Sledge",
@@ -3897,7 +4035,8 @@
 		],
 		"image": "9192232a-e12a-4f84-8880-6ba315124062",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Living", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Wind Wyvern Hide",
@@ -3952,7 +4091,8 @@
 		],
 		"image": "38829558-8804-4804-a16d-e3491fdeebe1",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Noble Vanguard",
@@ -3970,7 +4110,8 @@
 		],
 		"image": "76339700-716d-42f7-b265-e7f3c12e0f12",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Intercept", "Vigilant"]
 	},
 	{
 		"name": "Astral Anchor",
@@ -3998,7 +4139,8 @@
 		],
 		"image": "80245974-e200-4887-8763-61b7eeff9f2a",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Barkskin",
@@ -4013,7 +4155,8 @@
 		"image": "86308614-b7be-477c-b0ab-be56d31cadc5",
 		"slot": "",
 		"only":"Druid",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Upkeep", "Cantrip"]
 	},
 	{
 		"name": "Veteran's Belt",
@@ -4030,7 +4173,7 @@
 		"set": "Druid vs. Necromancer"
 	},
 	{
-		"name": "Dark pact Slayer",
+		"name": "Dark Pact Slayer",
 		"type": "CREATURE",
 		"subtypes": ["Demon"],
 		"schools": [
@@ -4040,7 +4183,8 @@
 			}
 		],
 		"image": "a0eb52c1-e93d-40a5-aafe-3e4e0d5c6b3b",
-		"slot": ""
+		"slot": "",
+		"traits": ["Flame"]
 	},
 	{
 		"name": "Surging Wave",
@@ -4068,7 +4212,8 @@
 		],
 		"image": "a3a04a1e-76e9-4043-a22c-d731ac2a103f",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Living", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Hail of Stones",
@@ -4097,7 +4242,8 @@
 		"image": "a6a69bf2-56a1-4f73-b62e-d1423983eddf",
 		"slot": "",
 		"only":"Beastmaster",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Channeling"]
 	},
 	{
 		"name": "Leather Gloves",
@@ -4129,7 +4275,8 @@
 		],
 		"image": "a15cfb56-c7a8-45b6-8b60-931d5d50d9e0",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Psychic Immunity"]
 	},
 	{
 		"name": "Ring of the Ocean's Depths",
@@ -4158,7 +4305,8 @@
 		],
 		"image": "a79cacbc-183e-4d91-9157-b47c7eac8d41",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Flame"]
 	},
 	{
 		"name": "Wall of Earth",
@@ -4172,7 +4320,8 @@
 		],
 		"image": "a81df3d7-fcb9-4afb-8da8-6e24db0f064e",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Extendable", "Lightning Immunity", "Flame Immunity", "Hydro"]
 	},
 	{
 		"name": "Tooth & Nail",
@@ -4185,7 +4334,8 @@
 			}
 		],
 		"image": "a239d7aa-4e81-4a4e-b447-cc3202bb5bad",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Pillar of Righteous Flame",
@@ -4199,7 +4349,8 @@
 		],
 		"image": "a482c083-20d2-46d8-9dbb-83e8405b2aea",
 		"slot": "",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Battle Fury",
@@ -4254,7 +4405,8 @@
 		],
 		"image": "a7287ca4-7c90-42aa-9c86-c8a6bedc286b",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Extendable", "Acid", "Lightning"]
 	},
 	{
 		"name": "Makunda",
@@ -4268,7 +4420,8 @@
 		],
 		"image": "a47455b5-caf0-42c0-9e3c-5945a108767d",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Necropian Vampiress",
@@ -4281,7 +4434,8 @@
 			}
 		],
 		"image": "a69231c7-9c7a-4b15-a432-275aeaf4bfed",
-		"slot": ""
+		"slot": "",
+		"traits": ["Frost"]
 	},
 	{
 		"name": "Psionic Scarab",
@@ -4296,7 +4450,8 @@
 		"image": "a454132f-d07c-406b-819d-8fde33ec7fd0",
 		"slot": "",
 		"only":"Forcemaster",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Aegis", "Nonliving", "Dissipate"]
 	},
 	{
 		"name": "Wreck of the Viridian Lace",
@@ -4310,7 +4465,8 @@
 		],
 		"image": "aa2b21a7-fb96-44c9-a2e9-f11389611b5c",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Zone Exclusive", "Legendary"]
 	},
 	{
 		"name": "Forcefield",
@@ -4325,7 +4481,8 @@
 		"image": "aa4cc3ff-7738-41c3-b5f6-f7b959ba71a5",
 		"slot": "",
 		"only":"Forcemaster",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Upkeep"]
 	},
 	{
 		"name": "Telekinetic Bomb",
@@ -4338,7 +4495,8 @@
 			}
 		],
 		"image": "aa9d500c-4f1c-446d-a9f6-f41c18e4aeb7",
-		"slot": ""
+		"slot": "",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Ring of Asyra",
@@ -4380,7 +4538,8 @@
 		],
 		"image": "ac8580d2-641c-4917-a56d-4123ab1e43c9",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Lightning"]
 	},
 	{
 		"name": "Feral Bobcat",
@@ -4393,7 +4552,8 @@
 			}
 		],
 		"image": "acfc7da8-49f0-45f0-ab19-e7ccd124711f",
-		"slot": ""
+		"slot": "",
+		"traits": ["Charge"]
 	},
 	{
 		"name": "Mana Leech",
@@ -4406,7 +4566,8 @@
 			}
 		],
 		"image": "ad3b90cf-5a53-4541-903f-4b0cfe397f64",
-		"slot": ""
+		"slot": "",
+		"traits": ["Psychic Immunity"]
 	},
 	{
 		"name": "Helm of Fear",
@@ -4433,7 +4594,8 @@
 			}
 		],
 		"image": "aeada61e-e636-4c46-b169-833162a13b93",
-		"slot": ""
+		"slot": "",
+		"traits": ["Upkeep"]
 	},
 	{
 		"name": "Firestorm",
@@ -4459,7 +4621,8 @@
 			}
 		],
 		"image": "afd1e927-92a2-4525-a33f-50fec7c9b382",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Bloodcrag Minotaur",
@@ -4473,7 +4636,8 @@
 		],
 		"image": "b1f01ef5-7382-4254-8761-293fde18e240",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Charge", "Tough"]
 	},
 	{
 		"name": "Skeletal Knight",
@@ -4487,7 +4651,8 @@
 		],
 		"image": "b3ea6383-16dc-4786-92c5-e1498f2811c3",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Redistributed Power",
@@ -4543,7 +4708,8 @@
 		],
 		"image": "b9ced997-b7fb-4cef-9f57-7264f3fea633",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Burnproof", "Frost", "Hydro Immunity", "Nonliving", "Resilient", "Unstoppable"]
 	},
 	{
 		"name": "Moonglow Amulet",
@@ -4556,7 +4722,8 @@
 			}
 		],
 		"image": "b28a0c37-8690-4bb4-826a-131cd9f12294",
-		"slot": "AMULET"
+		"slot": "AMULET",
+		"traits": ["Channeling gain"]
 	},
 	{
 		"name": "Suppression Cloak",
@@ -4584,7 +4751,8 @@
 		],
 		"image": "b37bdf0c-85f9-4b78-b32a-fe550c37d047",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Bloodthirsty", "Lumbering", "Resilient", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Psionic Cobra",
@@ -4599,7 +4767,8 @@
 		"image": "b69e50c8-9682-4eec-8af1-b41a34ed1b51",
 		"slot": "",
 		"only": "Forcemaster",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Pest", "Nonliving", "Dissipate"]
 	},
 	{
 		"name": "Crusade Banner",
@@ -4615,7 +4784,8 @@
 		"slot": "",
 		"only": "Paladin",
 		"set": "Paladin vs. Siren",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Channeling"]
 	},
 	{
 		"name": "Wand of Healing",
@@ -4656,7 +4826,8 @@
 			}
 		],
 		"image": "b318bb77-75c5-4e7a-9347-dbdcbde55f33",
-		"slot": ""
+		"slot": "",
+		"traits": ["Extendable"]
 	},
 	{
 		"name": "Paladin's Cloak",
@@ -4699,7 +4870,8 @@
 		"image": "b684d6b9-0bc0-4735-998b-026a82ce7e4b",
 		"slot": "",
 		"only":"Warlock",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Flame Immunity", "Hydro"]
 	},
 	{
 		"name": "Teleport",
@@ -4741,7 +4913,8 @@
 		"slot": "",
 		"only": "Druid",
 		"set": "Druid vs. Necromancer",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Regenerate", "Flame", "Hydro Immunity", "Living", "Channeling"]
 	},
 	{
 		"name": "Giant Wolf Spider",
@@ -4755,7 +4928,8 @@
 		],
 		"image": "b6003a5c-e5ec-46fe-921f-1b1d02b2e48e",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Psychic Immunity"]
 	},
 	{
 		"name": "Overextend",
@@ -4782,7 +4956,8 @@
 			}
 		],
 		"image": "b49212c1-f912-441b-b63f-9f9e415c2d00",
-		"slot": ""
+		"slot": "",
+		"traits": ["Climbing", "Rage"]
 	},
 	{
 		"name": "Togorah, Forest Sentinel",
@@ -4796,7 +4971,8 @@
 		],
 		"image": "b95362fb-2d0e-428d-af86-a85f667626dd",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Legendary", "Rooted", "Uproot", "Vigilant", "Intercept", "Flame", "Regenerate", "Hydro Immunity"]
 	},
 	{
 		"name": "Fortified Position",
@@ -4840,7 +5016,8 @@
 		"image": "bc7a9c30-8fa1-4b2e-90fa-74ef57eea278",
 		"slot": "",
 		"only": "Mind Mage",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Flying", "Familiar", "Spellbind", "Pest", "Channeling"]
 	},
 	{
 		"name": "Vine Snapper",
@@ -4854,7 +5031,8 @@
 		],
 		"image": "bc0190fc-cb97-47e5-aa19-a2d387a64b73",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Rooted", "Regenerate", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Darkfenne Bat",
@@ -4867,7 +5045,8 @@
 			}
 		],
 		"image": "bd1f7bbc-4a61-4006-a1d8-a5cbd78799db",
-		"slot": ""
+		"slot": "",
+		"traits": ["Flying"]
 	},
 	{
 		"name": "Bloodfire Helmet",
@@ -4912,7 +5091,8 @@
 		"slot": "",
 		"only": "Necromancer",
 		"set": "Druid vs. Necromancer",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Lightning Immunity", "Burnproof", "Channeling"]
 	},
 	{
 		"name": "Steal Enchantment",
@@ -4940,7 +5120,8 @@
 		],
 		"image": "bf4ff874-b6f9-4f70-9dcb-7831a58c8997",
 		"slot": "",
-		"only": "Nature Mage"
+		"only": "Nature Mage",
+		"traits": ["Legendary", "Familiar", "Flying", "Pest", "Channeling"]
 	},
 	{
 		"name": "Plagued",
@@ -4954,7 +5135,8 @@
 		],
 		"image": "bf217fd3-18c0-4b61-a33a-117167533f3d",
 		"slot": "",
-		"set": "Battlegrounds Domination"
+		"set": "Battlegrounds Domination",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Plague Zombie",
@@ -4968,7 +5150,8 @@
 		],
 		"image": "c0ae161f-891a-4fa8-824e-ca35ea8effeb",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Bloodthirsty", "Lumbering", "Pest", "Resilient", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Sentinel of V'Tar",
@@ -4998,7 +5181,8 @@
 		"slot": "",
 		"only": "Warlord",
 		"set": "Forged in Fire",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Unstoppable", "Burnproof", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Shoalsdeep Crocodile",
@@ -5016,7 +5200,8 @@
 		],
 		"image": "c1ef7821-662d-43c7-b0e5-e6a5a09bb1d9",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Tough"]
 	},
 	{
 		"name": "Repulse",
@@ -5073,7 +5258,8 @@
 		"image": "c6dbbc2d-f0d7-4d82-b387-726c1b060ae3",
 		"slot": "MAIN_OR_OFFHAND",
 		"only": "Siren",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Symbiotic Orb",
@@ -5102,7 +5288,8 @@
 		],
 		"image": "c9fd02fd-f37f-4c1d-88f2-bf3a7bae0e8e",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Zone Exclusive", "Flame Immunity"]
 	},
 	{
 		"name": "Otto Kronig, Master Engineer",
@@ -5116,7 +5303,8 @@
 		],
 		"image": "c29ba11c-7557-481d-b939-cf0d91a9b763",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Legendary", "Lightning"]
 	},
 	{
 		"name": "Invisible Stalker",
@@ -5132,7 +5320,8 @@
 		"slot": "",
 		"only": "Forcemaster",
 		"set": "Forcemaster vs. Warlord",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Upkeep", "Invisible", "Incorporeal", "Nonliving"]
 	},
 	{
 		"name": "Deptonne Berserker",
@@ -5146,7 +5335,8 @@
 		],
 		"image": "c53cc69d-d104-435b-bd30-873269b0d237",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Bloodthirsty"]
 	},
 	{
 		"name": "Shoalsdeep Tidecaller",
@@ -5174,7 +5364,8 @@
 		],
 		"image": "c175d5b3-b5b7-4e1b-896a-cd9bef3c790c.2",
 		"slot": "",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Legendary"]
 	},
 	{
 		"name": "Rajan's Fury",
@@ -5187,7 +5378,8 @@
 			}
 		],
 		"image": "c202e960-7279-412a-b539-af007cc6d538",
-		"slot": ""
+		"slot": "",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Telekinetic Bolt",
@@ -5261,7 +5453,8 @@
 		],
 		"image": "c8373d7e-a8be-47cf-a1e0-5e5e90d271e8",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Zone Exclusive", "Flame Immunity"]
 	},
 	{
 		"name": "Tjusut, the Risen King",
@@ -5275,7 +5468,8 @@
 		],
 		"image": "ca2b10a9-0c08-4649-997b-6fcbfef289f0",
 		"slot": "",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Legendary", "Nonliving"]
 	},
 	{
 		"name": "Fog Bank",
@@ -5288,7 +5482,8 @@
 			}
 		],
 		"image": "ca4dc7c2-6172-46fe-9a2d-a22a66214615",
-		"slot": ""
+		"slot": "",
+		"traits": ["Extendable", "Incorporeal"]
 	},
 	{
 		"name": "Merren Harpooner",
@@ -5315,7 +5510,8 @@
 			}
 		],
 		"image": "cdfe1a7e-8adf-42c1-b786-9dbef6256061",
-		"slot": ""
+		"slot": "",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Goblin Slinger",
@@ -5358,7 +5554,8 @@
 		],
 		"image": "cf0d8e35-24e6-4183-9243-ab9ae705703f",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Akiro's Hammer",
@@ -5373,7 +5570,8 @@
 		"image": "cf99cd9b-dc7a-4a61-b327-f62f78e731de",
 		"slot": "",
 		"only": "Warlord",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Zone Exclusive", "Flame", "Legendary"]
 	},
 	{
 		"name": "Mana Siphon",
@@ -5387,7 +5585,8 @@
 		],
 		"image": "cfbeb5ae-3c91-4b05-94e2-bbde8bec21f9",
 		"slot": "",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Incorporeal"]
 	},
 	{
 		"name": "Ballad of Courage",
@@ -5401,7 +5600,8 @@
 		],
 		"image": "d0ffcf7a-6a98-4028-80d1-5cd2ad708c2a",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Lightning Ring",
@@ -5445,7 +5645,8 @@
 		],
 		"image": "d3d74607-ebe1-4533-a7b6-e5a758e10e83",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Flame"]
 	},
 	{
 		"name": "Earth Elemental",
@@ -5459,7 +5660,8 @@
 		],
 		"image": "d04cb2a6-aadb-4c67-a6ad-1fc51e571b02",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Slow", "Burnproof", "Lightning", "Tough", "Nonliving", "Unmovable"]
 	},
 	{
 		"name": "Archer's Watchtower",
@@ -5473,7 +5675,8 @@
 		],
 		"image": "d5a7e765-259d-449f-b38f-591990d0a24d",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Zone Exclusive", "Flame"]
 	},
 	{
 		"name": "Tsunami",
@@ -5501,7 +5704,8 @@
 		],
 		"image": "d6f98712-aa0d-45b5-950e-7f9b991f5684",
 		"slot": "",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Divine Intervention",
@@ -5534,7 +5738,8 @@
 		],
 		"image": "d7ad8972-ee17-4588-8978-f8c7130e1cc4",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Channeling"]
 	},
 	{
 		"name": "Chain Lightning",
@@ -5574,7 +5779,8 @@
 		],
 		"image": "d44afeb5-76ac-4d0d-863c-7281ba581475",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Bloodthirsty"]
 	},
 	{
 		"name": "V'Tar Force Sentry",
@@ -5614,7 +5820,8 @@
 			}
 		],
 		"image": "d83c084a-1757-4402-98cb-443958e22f54",
-		"slot": ""
+		"slot": "",
+		"traits": ["Flying", "Fast"]
 	},
 	{
 		"name": "Divine Might",
@@ -5681,7 +5888,8 @@
 			}
 		],
 		"image": "d6769d21-6095-43b4-a5c3-cbfd6c5f9436",
-		"slot": ""
+		"slot": "",
+		"traits": ["Flame Immunity"]
 	},
 	{
 		"name": "Rolling Fog",
@@ -5696,7 +5904,8 @@
 		"image": "d7130cee-5fc4-4922-b10e-51c977b5d581",
 		"slot": "",
 		"set": "Forged in Fire",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Indestructible", "Dissipate", "Incorporeal"]
 	},
 	{
 		"name": "Fireball",
@@ -5752,7 +5961,8 @@
 		],
 		"image": "d40817b6-6574-4d86-b0bf-0f32fb1e49cf",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Blightheart",
@@ -5770,7 +5980,8 @@
 		],
 		"image": "d6585389-66a4-4d31-93a9-f55cbc411a56",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Elusive", "Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Zombie Frenzy",
@@ -5797,7 +6008,8 @@
 			}
 		],
 		"image": "da91fdd3-73dd-418f-91cf-bf827ef40509",
-		"slot": ""
+		"slot": "",
+		"traits": ["Regenerate", "Charge"]
 	},
 	{
 		"name": "Lesser Teleport",
@@ -5840,7 +6052,8 @@
 		],
 		"image": "db090651-c57b-4b03-973d-2e1fffa6f1b0",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Legendary", "Slow"]
 	},
 	{
 		"name": "Wizard's Tower",
@@ -5855,7 +6068,8 @@
 		"image": "dbe14006-e729-4f6e-90f9-89eadb863a91",
 		"slot": "",
 		"only": "Arcane Mage",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Familiar", "Unique", "Channeling"]
 	},
 	{
 		"name": "Piercing Strike",
@@ -5883,7 +6097,8 @@
 		],
 		"image": "dc82a5de-08e5-449d-a4c1-1ee193f816af",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Extendable", "Regenerate", "Living", "Flame", "Hydro Immunity"]
 	},
 	{
 		"name": "Guardian Angel",
@@ -5897,7 +6112,8 @@
 		],
 		"image": "dcc3b017-d4f4-479f-83c4-6597f06a2cce",
 		"slot": "",
-		"set": "Conquest of Kumanjaro"
+		"set": "Conquest of Kumanjaro",
+		"traits": ["Flying", "Intercept", "Aegis"]
 	},
 	{
 		"name": "Lullaby",
@@ -5911,7 +6127,8 @@
 		],
 		"image": "dd5b9000-b173-44bb-bce8-8b81ae35d09b",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Helm of Command",
@@ -5926,7 +6143,8 @@
 		"image": "dd34f61a-bace-4d62-b262-4554afd245e3",
 		"slot": "HELMET",
 		"only":"Warlord",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Spellbind"]
 	},
 	{
 		"name": "Elemental Cloak",
@@ -5966,7 +6184,8 @@
 		],
 		"image": "ddc2f76f-846c-4509-be8a-a7ead331a6ab",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Hydro Immunity", "Flame"]
 	},
 	{
 		"name": "Repulsion Field",
@@ -5997,7 +6216,8 @@
 		"slot": "",
 		"only": "Warlord",
 		"set": "Forged in Fire",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Burnproof"]
 	},
 	{
 		"name": "Conquer",
@@ -6012,7 +6232,8 @@
 		"image": "df73383f-4575-4db6-8084-9dbfe6b339d5",
 		"slot": "",
 		"only": "War Mage",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Magecast"]
 	},
 	{
 		"name": "Cascading Force Wave",
@@ -6042,7 +6263,8 @@
 		"slot": "",
 		"only": "Nature Mage",
 		"set": "Druid vs. Necromancer",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Legendary", "Regenerate", "Hydro Immunity", "Flame"]
 	},
 	{
 		"name": "Illusiory Leggings",
@@ -6074,7 +6296,8 @@
 		],
 		"image": "e5ddd1db-e578-4647-b3fa-c75d55f1171c",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Huginn, Raven Familiar",
@@ -6088,7 +6311,8 @@
 		],
 		"image": "e6dc6c98-4d6b-4d02-9b13-1df201ea1df4",
 		"slot": "",
-		"only": "Arcane Mage"
+		"only": "Arcane Mage",
+		"traits": ["Familiar", "Flying", "Pest", "Legendary", "Channeling"]
 	},
 	{
 		"name": "Drop Item",
@@ -6147,7 +6371,8 @@
 		"slot": "",
 		"only": "War Mage",
 		"set": "Forged in Fire",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Legendary"]
 	},
 	{
 		"name": "Shoalsdeep Trident",
@@ -6176,7 +6401,8 @@
 		],
 		"image": "e91c66db-b4cc-4b38-8427-06dceb2103a0",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Bloodthirsty", "Lumbering", "Pest", "Resilient", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Force Shield",
@@ -6191,7 +6417,8 @@
 		"image": "e99b27e9-f9ae-4f6c-8cde-3ea17563b8cb",
 		"slot": "",
 		"only": "Forcemaster",
-		"set": "Forcemaster - Academy"
+		"set": "Forcemaster - Academy",
+		"traits": ["Dissipate"]
 	},
 	{
 		"name": "Dispel Wand",
@@ -6220,7 +6447,8 @@
 		"image": "e723b930-1d54-406f-bf69-72f14c66f561",
 		"slot": "MAINHAND",
 		"only": "Forcemaster",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Cantrip"]
 	},
 	{
 		"name": "Champion's Gauntlets",
@@ -6249,7 +6477,8 @@
 		],
 		"image": "e3232a64-6312-4893-ae8f-7af53b46c397",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Slow", "Unmovable", "Lightning", "Burnproof", "Nonliving", "Psychic Immunity"]
 	},
 	{
 		"name": "Staff of Beasts",
@@ -6277,7 +6506,8 @@
 		],
 		"image": "ea8fb903-9a56-4afe-a2d2-e452b3407605",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Magebind", "Upkeep"]
 	},
 	{
 		"name": "Temple of Meraveran",
@@ -6291,7 +6521,8 @@
 		],
 		"image": "ea9335e0-8d99-429e-a055-f370b552ed26",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Zone Exclusive", "Unique"]
 	},
 	{
 		"name": "Heal",
@@ -6318,7 +6549,8 @@
 		],
 		"image": "ec3dc5d5-57c6-423e-bb65-ba2a0a0f91b9",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Resilient", "Uncontainable", "Nonliving", "Slow", "Psychic Immunity", "Acid Immunity"]
 	},
 	{
 		"name": "Whirling Spirit",
@@ -6331,7 +6563,8 @@
 			}
 		],
 		"image": "ec0215f9-dcc4-4df6-98f9-25e789a21a51",
-		"slot": ""
+		"slot": "",
+		"traits": ["Upkeep", "Incorporeal", "Nonliving"]
 	},
 	{
 		"name": "V'Tarrian Healing Song",
@@ -6404,7 +6637,8 @@
 		"image": "ee196806-7dc0-4de8-af56-50b3b76c2206",
 		"slot": "",
 		"only": "Wizard",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Channeling"]
 	},
 	{
 		"name": "Gurmash, Orc Sergeant",
@@ -6419,7 +6653,8 @@
 		"image": "eeb4e53a-b6e4-4f18-a8a7-1e6289830c11",
 		"slot": "",
 		"only": "Warlord",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Legendary", "Familiar", "Channeling"]
 	},
 	{
 		"name": "Mending Wave",
@@ -6447,7 +6682,8 @@
 		],
 		"image": "efe46b3c-9175-4cf0-be0a-d2738a63748a.B",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Zone Exclusive", "Burnproof", "Unique"]
 	},
 	{
 		"name": "Jet Stream",
@@ -6502,7 +6738,8 @@
 		],
 		"image": "f3aeaa12-ed03-4237-9287-74751c22f238",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Lightning"]
 	},
 	{
 		"name": "Harmonize",
@@ -6515,7 +6752,8 @@
 			}
 		],
 		"image": "f5d06493-1929-4d1f-9bcb-756339ccf23e",
-		"slot": ""
+		"slot": "",
+		"traits": ["Magebind", "Channeling gain"]
 	},
 	{
 		"name": "Teleport Trap",
@@ -6569,7 +6807,8 @@
 		],
 		"image": "f40c4fc3-45c9-437c-b536-25b68c1a7a02",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Reflex Boots",
@@ -6610,7 +6849,8 @@
 		],
 		"image": "f98c74f2-8acd-4dae-973f-2cee5509f41a",
 		"slot": "",
-		"set": "Paladin vs. Siren"
+		"set": "Paladin vs. Siren",
+		"traits": ["Zone Exclusive", "Unique"]
 	},
 	{
 		"name": "Thunderbolt",
@@ -6654,7 +6894,8 @@
 		"slot": "",
 		"only": "Druid",
 		"set": "Druid vs. Necromancer",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive", "Spawnpoint", "Regenerate", "Flame", "Hydro Immunity", "Living", "Channeling"]
 	},
 	{
 		"name": "Healing Charm",
@@ -6682,7 +6923,8 @@
 		],
 		"image": "f4574320-6839-4346-a36f-cad119af8b43",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Bloodthirsty", "Lumbering", "Pest", "Resilient", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Gale Force Ring",
@@ -6723,7 +6965,8 @@
 		],
 		"image": "fb442d50-c831-4da9-bbb8-dace15fea19b",
 		"slot": "",
-		"set": "Druid vs. Necromancer"
+		"set": "Druid vs. Necromancer",
+		"traits": ["Bloodthirsty", "Lumbering", "Pest", "Resilient", "Psychic Immunity", "Nonliving"]
 	},
 	{
 		"name": "Destroy Magic",
@@ -6796,7 +7039,8 @@
 		],
 		"image": "fec08b01-00f9-4003-93a6-d3d861007636",
 		"slot": "",
-		"set": "Forcemaster vs. Warlord"
+		"set": "Forcemaster vs. Warlord",
+		"traits": ["Legendary", "Aegis", "Flying", "Wind Immunity"]
 	},
 	{
 		"name": "Telekinetic Burst",
@@ -6854,7 +7098,8 @@
 		],
 		"image": "ffda5f70-74ef-40d8-9da5-f848c2447615",
 		"slot": "",
-		"only": "Dark Mage"
+		"only": "Dark Mage",
+		"traits": ["Magecast"]
 	},
 	{
 		"name": "Force Bash",
@@ -6883,7 +7128,8 @@
 		"image": "altar_of_infernia",
 		"slot": "",
 		"set": "Lost Grimoire Vol. 1",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Ballista",
@@ -6898,7 +7144,8 @@
 		"image": "ballista",
 		"slot": "",
 		"only": "War Mage",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Zone Exclusive", "Flame", "Unique"]
 	},
 	{
 		"name": "Chitin Armor",
@@ -6926,7 +7173,8 @@
 		],
 		"image": "circle_of_light",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Clear Mind",
@@ -6997,7 +7245,8 @@
 		],
 		"image": "dwarf_kriegshammer",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Lightning"]
 	},
 	{
 		"name": "Fire Elemental",
@@ -7011,7 +7260,8 @@
 		],
 		"image": "fire_elemental",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Upkeep", "Hydro", "Incorporeal", "Nonliving", "Flame Immunity"]
 	},
 	{
 		"name": "Gloves of Skill",
@@ -7053,7 +7303,8 @@
 		],
 		"image": "joseph_trublood_high_cleric",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Kumanjaran Leopard",
@@ -7067,7 +7318,8 @@
 		],
 		"image": "kumanjaran_leopard",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Elusive"]
 	},
 	{
 		"name": "Magma Golem",
@@ -7085,7 +7337,8 @@
 		],
 		"image": "magma_golem",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Armor", "Frost", "Nonliving", "Psychic Immunity", "Slow", "Uncontainable"]
 	},
 	{
 		"name": "Meredia's Blessing",
@@ -7100,7 +7353,8 @@
 		"image": "meredia_s_blessing",
 		"slot": "",
 		"set": "Lost Grimoire Vol. 1",
-		"epic": "true"
+		"epic": "true",
+		"traits": ["Zone Exclusive"]
 	},
 	{
 		"name": "Messenger of Bim-Shalla",
@@ -7114,7 +7368,8 @@
 		],
 		"image": "messenger_of_bim-shalla",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Aegis", "Flying"]
 	},
 	{
 		"name": "Mind's Eye",
@@ -7129,7 +7384,8 @@
 		"image": "mind_s_eye",
 		"slot": "",
 		"only": "Mind Mage",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Incorporeal", "Flying"]
 	},
 	{
 		"name": "Mordok's Tome",
@@ -7143,7 +7399,8 @@
 		],
 		"image": "mordok_s_tome",
 		"slot": "MAIN_OR_OFFHAND",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Legendary"]
 	},
 	{
 		"name": "Mountain Ram",
@@ -7157,7 +7414,8 @@
 		],
 		"image": "mountain_ram",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Charge", "Frost"]
 	},
 	{
 		"name": "Spiked Buckler",
@@ -7213,7 +7471,8 @@
 		],
 		"image": "titanodon",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Slow", "Unmovable", "Tough", "Trample"]
 	},
 	{
 		"name": "Unstable Fire Imp",
@@ -7227,7 +7486,8 @@
 		],
 		"image": "unstable_fire_imp",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Flame"]
 	},
 	{
 		"name": "Vorpal Blade",
@@ -7255,7 +7515,8 @@
 		],
 		"image": "wall_of_poison_gas",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Extendable", "Incorporeal", "Wind"]
 	},
 	{
 		"name": "Waterfall Cloak",
@@ -7283,6 +7544,7 @@
 		],
 		"image": "woolly_rhinoceros",
 		"slot": "",
-		"set": "Lost Grimoire Vol. 1"
+		"set": "Lost Grimoire Vol. 1",
+		"traits": ["Frost", "Tough", "Charge", "Trample"]
 	}
 ]

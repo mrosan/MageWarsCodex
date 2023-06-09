@@ -14,7 +14,7 @@ export interface CatalogItem {
   epic?: boolean;
   only?: string;
   slot?: EquipmentSlot;
-  //traits?: Trait[] TODO
+  traits: string[];
   set: string;
   sumLevel: number;
 }
@@ -27,6 +27,7 @@ export interface CatalogFilterForm {
   onlies: string[];
   slots: EquipmentSlot[];
   sets: string[];
+  traits: string[];
 }
 
 export enum SpellType {

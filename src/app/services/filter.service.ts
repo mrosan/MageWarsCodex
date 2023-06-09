@@ -22,6 +22,8 @@ export class FilterService {
       sets: [arenaSets],
       epic: [false],
       commonSubtypes: [false],
+      traits: [[]],
+      compatibles: [false],
     }); // TODO type
   }
 
