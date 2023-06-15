@@ -1598,8 +1598,7 @@
 		"image": "9e7cbef4-1ad9-46cf-95c0-1aafd656c85d",
 		"slot": "AMULET",
 		"only": "Warlock",
-		"set": "Forged in Fire",
-		"traits": ["Magebind"]
+		"set": "Forged in Fire"
 	},
 	{
 		"name": "Mana Crystal",
@@ -7025,7 +7024,8 @@
 		],
 		"image": "fe74477b-1858-42a7-a5de-739f965944c3",
 		"slot": "",
-		"set": "Forged in Fire"
+		"set": "Forged in Fire",
+		"traits": ["Magebind"]
 	},
 	{
 		"name": "Selesius, the East Wind",
