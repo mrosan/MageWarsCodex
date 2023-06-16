@@ -90,10 +90,10 @@
             class="src-input"
             [ngClass]="{ 'input-small': innerWidth < 720 }"
           >
-            <mat-label *ngIf="list">{{
+            <mat-label *ngIf="fullList">{{
               "Search " +
                 (innerWidth < 720 ? "in " : "among ") +
-                list.length +
+                fullList.length +
                 " spells"
             }}</mat-label>
             <input
@@ -184,4 +184,15 @@
       (click)="cardClicked(item)"
     ></app-catalog-item>
   </div>
+  <mat-paginator
+    class="paginator"
+    *ngIf="fullList"
+    [length]="fullList.length"
+    [pageIndex]="pageIndex"
+    [pageSize]="pageSize"
+    [pageSizeOptions]="[10, 25, 50, 100, 1000]"
+    (page)="handlePageEvent($event)"
+    aria-label="Select page"
+  >
+  </mat-paginator>
 </div>

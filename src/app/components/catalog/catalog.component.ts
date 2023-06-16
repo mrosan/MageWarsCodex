@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { PageEvent } from '@angular/material/paginator';
 import { Observable, Subscription } from 'rxjs';
 import {
   CatalogItem,
@@ -20,8 +21,8 @@ import { FilterService } from 'src/app/services/filter.service';
 })
 // TODO Catalog and List should inherit from the same Component
 export class CatalogComponent implements OnInit, OnDestroy {
-  public list$: Observable<CatalogItem[]>;
   public list: CatalogItem[] | undefined;
+  public fullList: CatalogItem[] | undefined;
   private listSub: Subscription | undefined;
   private fgSub: Subscription | undefined;
 
@@ -31,6 +32,8 @@ export class CatalogComponent implements OnInit, OnDestroy {
   public wideScreen: boolean = false;
   public innerWidth: any;
   public selectedCard: CatalogItem | undefined;
+  public pageIndex: number = 0;
+  public pageSize: number = 25;
 
   constructor(
     private loader: LoaderService,
@@ -38,17 +41,19 @@ export class CatalogComponent implements OnInit, OnDestroy {
     private emitter: EmitterService,
     private builder: BuilderService
   ) {
-    this.list$ = this.loader.getCatalog();
     this.filterGroup = this.filter.getFormGroup();
   }
 
   ngOnInit(): void {
     this.#checkEquipmentSelectForm();
-    this.listSub = this.list$.subscribe((val) => {
-      this.list = val;
+    this.listSub = this.loader.getCatalog().subscribe((val) => {
+      this.fullList = val;
+      this.pageIndex = 0;
+      this.list = this.fullList.slice(
+        this.pageIndex * this.pageSize,
+        this.pageSize
+      );
       if (!this.filterView && val.length) {
-        //Beware of infinite loops!
-        //this.#setSets();
         this.allSubTypes = this.loader.getAllSubTypes();
         this.filterView = {
           types: Object.values(SpellType),
@@ -98,6 +103,7 @@ export class CatalogComponent implements OnInit, OnDestroy {
     this.filterGroup.reset();
     this.loader.filterCatalog(this.filterGroup.value, this.builder.getMage());
     this.#setSets();
+    this.pageIndex = 0;
   }
 
   cardClicked(card: CatalogItem) {
@@ -107,6 +113,14 @@ export class CatalogComponent implements OnInit, OnDestroy {
     }, 300);
     this.selectedCard = card;
     this.builder.addCard(card);
+  }
+
+  handlePageEvent(event: PageEvent) {
+    if (!this.fullList) return;
+    this.pageIndex = event.pageIndex;
+    this.pageSize = event.pageSize;
+    const start = this.pageIndex * this.pageSize;
+    this.list = this.fullList.slice(start, start + this.pageSize);
   }
 
   #checkEquipmentSelectForm() {

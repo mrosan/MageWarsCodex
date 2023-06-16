@@ -14,6 +14,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -50,6 +51,7 @@ import { DeckComponent } from './components/deck/deck.component';
     MatButtonToggleModule,
     MatSelectModule,
     MatSnackBarModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
