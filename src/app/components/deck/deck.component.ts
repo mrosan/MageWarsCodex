@@ -117,6 +117,4 @@ export class DeckComponent implements OnInit, OnDestroy {
       }
     });
   }
-
-  // TODO filter options
 }

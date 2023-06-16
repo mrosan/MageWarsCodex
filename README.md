@@ -1,27 +1,32 @@
-# MageWarsCodex
+# Mage Wars Codex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+Mage Wars Codex is a companion app for the Mage Wars Arena boardgame of Arcane Wonders. It features an easily-searchable dictionary for key words and rules, as well as a spellcard catalog and spellbook (deck) builder. Since this is a hobby project created for personal use, I did not include all of the Mage Wars Academy cards in the catalog as I do not have those in my collection. Nevertheless, this app could be a great addition for anyone's game who plays Arena-only.
 
-## Development server
+The app can be accessed here: (Mage Wars Codex)[https://mrosan.github.io/MageWarsCodex]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Developer notes
 
-## Code scaffolding
+This is a practice project written in Angular, first created on a deadline. As a result it still lacks a certain amount of polish and many of the solutions are "temporary". The app was written with a definite scope in mind; I do not expect to scale the app further as the boardgame is unlikely to expand on its features in the future. See the _TODO list_ section for the next planned changes in the app that I might or might not find the time for to implement. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Build and use
 
-## Build
+Prerequisites: [NPM](https://www.npmjs.com/)
+- Run `npm install` to install dependencies.
+- Run `npm start` to build and run.
+- Navigate to `http://localhost:4200/` in your browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To create a desktop app, run `electron-packager . --platform=<platform>` where <platform> is e.g. `win32` on Windows. Read more at [electron-packager](https://github.com/electron/electron-packager).
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## TODO list
+- Make the cards load from a remote database instead of having them locally.
+- Make the app mobile-friendly (i.e. improve styling for smaller screens)
+  - ...and then create a mobile app too.
+- Improve filters and filter handling.
+- Make the code better maintainable
+  - Base component for listing cards.
+  - FilterService should be responsible for all filtering features.
+  - Type improvements.
+- Error handling for importing invalid spellbooks.
+  - Also for .json data files if database is implemented.
+- Add the remaining Mage Wars Academy cards and rules.
+- Improve catalog-loading (time, indication).
